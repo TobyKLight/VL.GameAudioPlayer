@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="QweuDjbAiTcMvsdM82enH1" LanguageVersion="2021.4.12.1374" Version="0.128">
+  <NugetDependency Id="I1YjwIJ5hGOL5hGzmSpzbU" Location="VL.CoreLib" Version="2021.4.12" />
+  <Patch Id="KWwyvAVo3KpNSKbGZrlZ8y">
+    <Canvas Id="QSZUk3kz9KaPUpoWHZQ15g" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="SG275rlpRS4LmcVUiTeIEB">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="IOFQE3WqXsaNmgBnYBakC9">
+        <Canvas Id="RsbUYazjIqrOzucfYc8Dv4" CanvasType="Group">
+          <Node Bounds="72,578,265,19" Id="MtY0KWiVteXQbxIdj6qBPR">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastSymbolSource="VL.GameAudioPlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GameAudioHost" />
+            </p:NodeReference>
+            <Pin Id="My1ED0tsUd6OSeYEPTfd3u" Name="SFXMaxPlayers" Kind="InputPin" />
+            <Pin Id="V1UIFuRjsEuNCplVTDCJyI" Name="MusicMaxPlayers" Kind="InputPin" />
+            <Pin Id="EXGbaymuhQ2NV6CKP6WFkU" Name="DialogMaxPlayers" Kind="InputPin" />
+            <Pin Id="C0gy2KBrJl8OhseAqSf7Uz" Name="SFXTypeVolume" Kind="InputPin" />
+            <Pin Id="J5aDtvU5JYDOvRVXrbXAEu" Name="MusicTypeVolume" Kind="InputPin" />
+            <Pin Id="RUcwPDZSEDeMmrrBVNLuSt" Name="DialogTypeVolume" Kind="InputPin" />
+            <Pin Id="DrsqrAO5kP9QB6ZdE3kyGL" Name="Debug_LogWarningsErrorsToConsole" Kind="InputPin" />
+            <Pin Id="MkTkaMqTsv1O4yd0nAonBA" Name="AudioRequests" Kind="InputPin" />
+            <Pin Id="FEmZh2KzkLBP3X8fdKJHj4" Name="AudioFilesFolder" Kind="InputPin" />
+            <Pin Id="URoBPaf1HLzMvLNRZFF9is" Name="RescanFiles" Kind="InputPin" />
+            <Pin Id="CfzsCF6hnVgQE0ubHV3RRv" Name="MediaConfigTSVFilePath" Kind="InputPin" />
+            <Pin Id="KSBd6mMP944Ns1SpNaV9Y8" Name="ValidMediaKeys" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Ing0KblIrnAO1IyDMujXBL" Comment="AudioFilesFolder" Bounds="285,454,228,15" ShowValueBox="true" isIOBox="true" Value="..\..\Data_TestAudio\">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Path" />
+              <CategoryReference Kind="Category" Name="IO" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:pathtype p:Assembly="VL.Core" p:Type="VL.Core.PathType">Directory</p:pathtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NmjrlxnPT7hOtVoPHbFljS" Comment="DoRescanFiles" Bounds="309,479,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ULAZtZMem2qMZe2uYI8iBO" Comment="" Bounds="189,314,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VMCOMO4MZObLpMnH8kYd8f" Comment="Volume" Bounds="95,319,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="46,357,145,19" Id="BbCgsQ9JOOlO3VAbRSFkxj">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Commands" LastSymbolSource="VL.SFML.GameAudioPlayerR.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PlayMusic" />
+              <PinReference Kind="InputPin" Name="Node Context" />
+            </p:NodeReference>
+            <Pin Id="B5RrHmSNhfJLO5gO6ab0vj" Name="MediaKey" Kind="InputPin" />
+            <Pin Id="QlTrFUfMLJgQFIe3N8r69I" Name="LoopCount" Kind="InputPin" />
+            <Pin Id="TAmbFhHhYDeLnDBwYGDux4" Name="Volume" Kind="InputPin" />
+            <Pin Id="TQY75bEyO1pOtOIq3XX9fn" Name="VolumeFadeUpTime" Kind="InputPin" />
+            <Pin Id="KKq6hsCqeueNTTTJPU7EMO" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
+            <Pin Id="Ud3cs7ZBwFsNIVjoNs9NLY" Name="AutoFadeOutOthersTime" Kind="InputPin" />
+            <Pin Id="BCckdgPCprdLG1YFITdqpF" Name="Send" Kind="InputPin" />
+            <Pin Id="PjXcACuwYb6NKq9F8f5tTE" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EB3zRKHQGLcQbHx3MAkt0v" Bounds="-4,18,395,218" ShowValueBox="true" isIOBox="true" Value="Some details to know about adding media &#xD;&#xA;&#xD;&#xA;1.The following audio filetypes are supported&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&#xD;&#xA;This list comes from the underlying library SFML.&#xD;&#xA;(Note I only tested OGG and WAV)&#xD;&#xA;&#xD;&#xA;All media filenames in the audio folder must be unique (before the extension) no matter which subfolder they are in. &#xD;&#xA;You can use subfolders in the audio folder to organise the media for your own reference.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="45,434,105,19" Id="RbJbShuvzqNLOeGuCy4xNt">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastSymbolSource="VL.SFML.GameAudioPlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Merge (PinGroup)" />
+            </p:NodeReference>
+            <Pin Id="QKxX0tLvC6XN3huopjiB1u" Name="Value" Kind="InputPin" />
+            <Pin Id="NDMJZL4a0J4PhWz8Z9iJqc" Name="Value 2" Kind="InputPin" />
+            <Pin Id="MH0m3CFtD05PAiLCDyzlrF" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PbTuNJXc2oRMx8Uyf67eGj" Comment="ValidMediaKeys" Bounds="76,620,246,139" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="IzpbV3kunIHMSamqbGx53i" Comment="" Bounds="250,355,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="248,388,75,19" Id="LeLOO2NFwM7Ps7cgDdexrr">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastSymbolSource="VL.SFML.GameAudioPlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StopAllMedia" />
+            </p:NodeReference>
+            <Pin Id="H7SpBcFCMGgLyrjRIjwDHE" Name="Send" Kind="InputPin" />
+            <Pin Id="A2fTBmVsnf7NCHVOtVFQqu" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Dz9ClMoRjpVOezQgE0Mw8A" Bounds="399,38,35,37" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EyJz058Z2xzNNv4IhU89eb" Bounds="284,528,35,37" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VESw44gtRBoMFMtDTuJhQm" Comment="sfml supported audio extensions " Bounds="456,50,112,375" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">23</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item>wav</Item>
+              <Item>ogg</Item>
+              <Item>flac</Item>
+              <Item>aiff</Item>
+              <Item>au</Item>
+              <Item>raw</Item>
+              <Item>paf</Item>
+              <Item>svx</Item>
+              <Item>nist</Item>
+              <Item>voc</Item>
+              <Item>ircam</Item>
+              <Item>w64</Item>
+              <Item>mat4</Item>
+              <Item>mat5</Item>
+              <Item>pvf</Item>
+              <Item>htk</Item>
+              <Item>sds</Item>
+              <Item>avr</Item>
+              <Item>sd2</Item>
+              <Item>caf</Item>
+              <Item>wve</Item>
+              <Item>mpc2k</Item>
+              <Item>rf64</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="FLz2rNHeppPOopBvQ6RYcU" Comment="MediaConfigTSVFilePath" Bounds="333,540,280,15" ShowValueBox="true" isIOBox="true" Value="..\..\Data_TestAudio\GameAudioPlayerTestSound.tsv">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Jm2pu5qpUbuOSB3su03ov2" Bounds="345,639,705,1284" ShowValueBox="true" isIOBox="true" Value="There are two intended workflows for adding media. &#xD;&#xA;-The basic workflow is just drop audio files in your folder, hit 'DoRescanFiles' and then you can use the MediaKey based on filename to immediately play them. &#xD;&#xA;&#xD;&#xA;2. For the Advanced workflow create a Tab Separated Value (TSV) file, which can be exported from any spreadsheet app. (Eg Google Sheets). Reference it here and press DoRescanFiles. &#xD;&#xA;There is an example TSV file in the Data_TestAudio folder.&#xD;&#xA;There is also an example spreadsheet file (ODS) that it was generated from. &#xD;&#xA;&#xD;&#xA;The TSV file has three purposes &#xD;&#xA;-Simplify the workflow between a composer and a developer by creating a single source of truth for media keys&#xD;&#xA;-Enable working with a single audio file and extracting many pieces of media from it with unique keys. &#xD;&#xA;-Supply metadata about BPM and bar for functionality to play in time (see Helppatch 'Play Music Loops')&#xD;&#xA;&#xD;&#xA;A valid TSV file has: &#xD;&#xA;-Column header names in the first row &#xD;&#xA;-Column headers are case sensitive &#xD;&#xA;-Order of columns does not matter and you can create additional columns for organisation&#xD;&#xA;&#xD;&#xA;-The minimum columns you must have are &#xD;&#xA;MediaKey&#xD;&#xA;FilePath&#xD;&#xA;&#xD;&#xA;-The optional columns are &#xD;&#xA;BPM&#xD;&#xA;Start&#xD;&#xA;End&#xD;&#xA;CanExitEveryXBars&#xD;&#xA;PreloadTag&#xD;&#xA;&#xD;&#xA;-Press DoRescan to also scan the TSV file again. &#xD;&#xA;-When you see the keys listed in ValidMediaKeys you know it's worked&#xD;&#xA;&#xD;&#xA;------&#xD;&#xA;//MORE INFO ON TSV FILE&#xD;&#xA;&#xD;&#xA;-Any value you do not want to specify leave as blank or -1. Do not put zero unless that's the data you wish to provide (Eg a file should start at zero seconds or a mediakey should be &quot;0&quot;)&#xD;&#xA;&#xD;&#xA;-MediaKey is the media key you desire to use&#xD;&#xA;-FilePath is the relative path inside the audio folder &#xD;&#xA;&#xD;&#xA;-Start and End values are normally times in seconds. You can optionally use minutes:seconds format (Eg 1:30.5 and 90.5 are the same value of 90.5 seconds)&#xD;&#xA;&#xD;&#xA;-BPM should be a number. IF BPM is specified then Start and End values should be specified in musical bars at the equivalent of 4 beats per bar. (Instead of in seconds)&#xD;&#xA;-Bars start at 1 (not 0) same as in most music applications. So a Start of 1 and End of 2 means start from start of bar 1, end at start of bar 2, for a total length of 1 bar. &#xD;&#xA;-What about starting part way through a bar? Bars can also be decimal. EG 14.5. (Doesn't support bars:beats sorry.) &#xD;&#xA;&#xD;&#xA;-CanExitEveryXBars is used when playing music loops in sequence. It allows you to make a long piece of music with variations but still use the play in sequence functionality to exit after any phrase rather than only at the end. See helppatch 'Play Music Loops in Sequence'&#xD;&#xA;&#xD;&#xA;-PreloadTag is a single tag that can be used to preload this media by command. See helppatch 'Preload Media by Tag'. &#xD;&#xA;-Do not use commas, supply a single tag per media only. &#xD;&#xA;&#xD;&#xA;-You can use blank rows for organisation &#xD;&#xA;-There is no cost to making variations of media that use the same path and different settings. For example to allow a piece of music to have two PreloadTags you can make two entries. Each row only needs a unique MediaKey. &#xD;&#xA;-See the helppatch on debugging for how to view errors related to TSV import&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;3. Try and play this loop. Does it sound a bit funny when it loops? See the next helppatch on preloading. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PhOL5eyZlzGPSseEM8IqiQ" Comment="LoopCount" Bounds="71,299,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QpsYxTq4pkvMc1MyCAURZm" Bounds="-36,251,35,37" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="ByUB9glQ6ocLGQUwAJ2Yw9" Name="" Bounds="406,17,455,412">
+            <p:ColorIndex p:Type="Int32">9</p:ColorIndex>
+          </Overlay>
+          <Overlay Id="HWKCm76OCYhPCnVxxMs5Tq" Name="" Bounds="252,514,518,80">
+            <p:ColorIndex p:Type="Int32">4</p:ColorIndex>
+          </Overlay>
+          <Overlay Id="UmKTN7h6kx4OzyeaLou21U" Name="" Bounds="-38,235,404,184">
+            <p:ColorIndex p:Type="Int32">2</p:ColorIndex>
+          </Overlay>
+          <Pad Id="NqkX0qV02a7PS2akmrrw3Y" Comment="MediaKey" Bounds="49,267,193,15" ShowValueBox="true" isIOBox="true" Value="Music_Hecticness_HeavyBeats">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="V20rAwo38IlN5uujtiRSOa" Bounds="582,66,263,365" ShowValueBox="true" isIOBox="true" Value="tested with WAV files on the following settings on windows.&#xD;&#xA;&#xD;&#xA;16bit 44100 Mono and Stereo&#xD;&#xA;16bit 48000 Mono and Stereo&#xD;&#xA;16bit 96000 Mono and Stereo&#xD;&#xA;24bit 48000 Mono and Stereo&#xD;&#xA;&#xD;&#xA;...but for maximum compatibility I would stick with 16bit 41k or 48k for your whole project. Ensure it's also your sound card setting. &#xD;&#xA;&#xD;&#xA;Note also that if you have identical sound as a mono file and a stereo file the stereo content will appear to be louder. So if you change from stereo to mono later to save space/memory: be aware you may need to adjust volumes.  ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="O4DeXx568MVLdm8ROojG2l" Name="Create" />
+        <Patch Id="NSCLSGlL5EtPq5aFiZecsg" Name="Update" />
+        <ProcessDefinition Id="J4gHHSAHE7eNvZl7124apv">
+          <Fragment Id="F5Nsezh3Ve1PiLHmAaH6TO" Patch="O4DeXx568MVLdm8ROojG2l" Enabled="true" />
+          <Fragment Id="QVmY8cj9JiZO97X65Sa5FM" Patch="NSCLSGlL5EtPq5aFiZecsg" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="R6JZKDIKiUaLJthw3zjKAj" Ids="Ing0KblIrnAO1IyDMujXBL,FEmZh2KzkLBP3X8fdKJHj4" />
+        <Link Id="RFZcmLAe7E5NMovDCVCYr8" Ids="NmjrlxnPT7hOtVoPHbFljS,URoBPaf1HLzMvLNRZFF9is" />
+        <Link Id="LaSxmPZoFLbNhKBvE7uTw7" Ids="VMCOMO4MZObLpMnH8kYd8f,TAmbFhHhYDeLnDBwYGDux4" />
+        <Link Id="QCRyZ82YsiBPojxxPcEjSJ" Ids="ULAZtZMem2qMZe2uYI8iBO,BCckdgPCprdLG1YFITdqpF" />
+        <Link Id="LdhpiCUXYbUOiGCd5nbhGX" Ids="MH0m3CFtD05PAiLCDyzlrF,MkTkaMqTsv1O4yd0nAonBA" />
+        <Link Id="OTJn4cc1JxqMrfwa1ctEqm" Ids="KSBd6mMP944Ns1SpNaV9Y8,PbTuNJXc2oRMx8Uyf67eGj" />
+        <Link Id="M4NYxnhfGoGN4RRf3wudQ2" Ids="IzpbV3kunIHMSamqbGx53i,H7SpBcFCMGgLyrjRIjwDHE" />
+        <Link Id="RIinzsyerwNNKBBvHMH5GQ" Ids="FLz2rNHeppPOopBvQ6RYcU,CfzsCF6hnVgQE0ubHV3RRv" />
+        <Link Id="A63534mP4JONDCyUZWgWQE" Ids="PhOL5eyZlzGPSseEM8IqiQ,QlTrFUfMLJgQFIe3N8r69I" />
+        <Link Id="EbvcQ2h7tyAP0MGjrr68xn" Ids="PjXcACuwYb6NKq9F8f5tTE,QKxX0tLvC6XN3huopjiB1u" />
+        <Link Id="CDT0J96YUzeQI7G83PLvsS" Ids="A2fTBmVsnf7NCHVOtVFQqu,NDMJZL4a0J4PhWz8Z9iJqc" />
+        <Link Id="LSY7gReofHgOONFCLJepp1" Ids="NqkX0qV02a7PS2akmrrw3Y,B5RrHmSNhfJLO5gO6ab0vj" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="BCfb6NARWQ6Lh0iReeqPCb" Location="../../VL.GameAudioPlayer.vl" />
+</Document>

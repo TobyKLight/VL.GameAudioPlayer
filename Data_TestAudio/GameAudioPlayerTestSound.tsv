@@ -1,0 +1,79 @@
+Category	MediaKey	FilePath	BPM	Start	End	CanExitEveryXBars	PreloadTag	Comment
+/SFX								
+	Menu_Select	IGBM_SFX_Combined.wav	120	13	13.5		SFX	At a minimum you must have two columns in the header row "MediaKey" and "FilePath"
+	Menu_Edit	IGBM_SFX_Combined.wav	120	13.5	14		SFX	And then you have optional columns "BPM" "Start" "End" and "CanExitEveryXBars"
+	Menu_Confirm	IGBM_SFX_Combined.wav	120	14	14.5		SFX	Column names can be in any order but must be in the first row
+	Menu_Back	IGBM_SFX_Combined.wav	120	14.5	15		SFX	Apart from that you can create columns with other names like this Comment column and the category column. 
+	Menu_Increment	IGBM_SFX_Combined.wav	120	15	15.5		SFX	These won't affect the data and you can use them for organisation & communication
+	Menu_Decrement	IGBM_SFX_Combined.wav	120	15.5	16		SFX	You can include blank rows for readability, any row with a blank MediaKey will be ignored.
+	Menu_NewGameConfirm	IGBM_SFX_Combined.wav	120	5	13		SFX	
+								
+	Interact_PickUpPellet1	IGBM_SFX_Combined.wav	120	16	17		SFX	When you include a BPM value than Start and End refer to the bar start and bar end
+	Interact_PickUpPellet2	IGBM_SFX_Combined.wav	120	17	18		SFX	This is 1-indexed, same as in most music programs. So the first bar is '1' not '0'
+	Interact_PickUpPellet3	IGBM_SFX_Combined.wav	120	18	19		SFX	For this row the sound starts at the start of Bar 18, and the end point should be start of Bar 19
+	Interact_PickUpPellet4	IGBM_SFX_Combined.wav	120	19	20		SFX	You can use Decimal bar start and end, so 13.5 is starting halfway through bar 13.
+	Interact_PickUpPellet5	IGBM_SFX_Combined.wav	120	20	21		SFX	But please note that decimal bars is NOT bars and beats.
+	Interact_GhostDropFruit	IGBM_SFX_Combined.wav	120	21	22		SFX	BPM assumes 4 beats per bar but really it's just a shorthand for how many seconds per bar. 
+	Interact_PickUpFruit	IGBM_SFX_Combined.wav	120	22	23		SFX	So you can use other time signatures if you like as long as you can work out what the equivalent 4 beat per bar BPM would be 
+								
+	Interact_PlaceDoor	IGBM_SFX_Combined.wav	120	23	24		SFX	Media that use BPM and bar notations must be prepared properly
+	Interact_OpenDoor	IGBM_SFX_Combined.wav	120	24	25		SFX	That includes no silence at the start, must jump straight into bar 1 beat 1
+	Interact_CloseDoor	IGBM_SFX_Combined.wav	120	25	26		SFX	And of course consistent BPM
+								
+	AI_GhostSeesPlayer	IGBM_SFX_Combined.wav	120	26	28		SFX	
+	AI_GhostGetsPlayer1	IGBM_SFX_Combined.wav	120	28	33		SFX	
+	AI_GhostGetsPlayer2	IGBM_SFX_Combined.wav	120	33	38		SFX	
+	AI_GhostGetsPlayer3	IGBM_SFX_Combined.wav	120	38	42		SFX	
+/Music								
+	Music_ManyBirds	Music_ManyBirds.ogg						
+	Music_ManyBirds_Bridge	Music_ManyBirds.ogg		69.5				If you don't include a BPM value than Start and End refer to position in seconds
+	Music_ManyBirds_Bridge2	Music_ManyBirds.ogg		1:09				You can also optionally use a colon for minutes:seconds notation. 
+								Ensure the TSV file exports this as a string eg "1:09" and doesn't convert it to something else
+	Music_Hecticness	Music\Music_Hecticness.ogg	141					
+	Music_Hecticness_Intro	Music\Music_Hecticness.ogg	141	1	5		Level1	
+	Music_Hecticness_Piano	Music\Music_Hecticness.ogg	141	5	9		Level1	
+	Music_Hecticness_HeavyBeats	Music\Music_Hecticness.ogg	141	9	11		Level1	
+	Music_Hecticness_HeavyBeatsMelody	Music\Music_Hecticness.ogg	141	11	15		Level1	
+	Music_Hecticness_Marimba	Music\Music_Hecticness.ogg	141	15	19	4	Level1	
+	Music_Hecticness_SynthSnare	Music\Music_Hecticness.ogg	141	19	23		Level1	
+	Music_Hecticness_ScalingDeepMarimba	Music\Music_Hecticness.ogg	141	31	41		Level1	
+	Music_Hecticness_SnareOutro	Music\Music_Hecticness.ogg	141	46	47		Level1	
+								
+	Music_NeverAgain	Music\Music_NeverAgain.ogg	120					
+	Music_NeverAgain_BeatA	Music\Music_NeverAgain.ogg	120	1	3	1	Level2	CanExitEveryXBars' column is used with the PlayMusicNext functionality
+	Music_NeverAgain_BeatB	Music\Music_NeverAgain.ogg	120	3	11	1	Level2	See the helppatch 'HowTo Trigger Music To Play In Time'
+	Music_NeverAgain_SoftKeys	Music\Music_NeverAgain.ogg	120	11	15		Level2	Specify this for how frequently it can exit the music when you ask it to play something next, 
+	Music_NeverAgain_SoftAndBass	Music\Music_NeverAgain.ogg	120	15	19		Level2	So that it doesn't exit halfway through a musical phrase that goes over many bars
+	Music_NeverAgain_BassAndBeatB	Music\Music_NeverAgain.ogg	120	19	26	4	Level2	Values are usually the length of a musical phrase in whole bars
+	Music_NeverAgain_MainGroove	Music\Music_NeverAgain.ogg	120	27	35	4	Level2	For example this section is 8 bars long but it can exit every 4 bars
+	Music_NeverAgain_FXBridge1	Music\Music_NeverAgain.ogg	120	35	38		Level2	
+	Music_NeverAgain_ArpegIntro	Music\Music_NeverAgain.ogg	120	43	47		Level2	This means you can make a long piece of music (eg battle music) with many variations
+	Music_NeverAgain_ArpegA	Music\Music_NeverAgain.ogg	120	47	51		Level2	But when the battle is over your app can shortly find an appropriate musical exit point
+	Music_NeverAgain_ArpegB	Music\Music_NeverAgain.ogg	120	51	55		Level2	If you don't specify 'CanExitEveryXBars' then it can only exit at the full length  of the media
+	Music_NeverAgain_MainGrooveArpeg	Music\Music_NeverAgain.ogg	120	55	63	4	Level2	
+	Music_NeverAgain_BeatBOutro	Music\Music_NeverAgain.ogg	120	63	67		Level2	
+	Music_NeverAgain_BeatBOutTail	Music\Music_NeverAgain.ogg	120	67	69		Level2	
+								
+/Test								
+	Test_D1Sine_1	TestSound\SineWave_D1_Mono_4Bars_120BPM.wav	120	1	2			
+	Test_D1Sine_2	TestSound\SineWave_D1_Mono_4Bars_120BPM.wav	120	2	3			
+	Test_D1Sine_3	TestSound\SineWave_D1_Mono_4Bars_120BPM.wav	120	3	4			
+	Test_D1Sine_4	TestSound\SineWave_D1_Mono_4Bars_120BPM.wav	120	4	5			
+								
+/Dialog								
+	CharA_Bleep1	IGBM_DialogBleeps_Combined.wav	110	1	1.25			In this case trying to make the samples as short as possible
+	CharA_Bleep2	IGBM_DialogBleeps_Combined.wav	110	1.5	1.75			This means that as little as possible will be loaded into memory
+	CharA_Bleep3	IGBM_DialogBleeps_Combined.wav	110	2	2.25			
+	CharA_Bleep4	IGBM_DialogBleeps_Combined.wav	110	2.5	2.75			Note again how 2.5 = halfway through bar 2. 
+	CharA_Bleep5	IGBM_DialogBleeps_Combined.wav	110	3	3.25			In ableton it actually calls this 2.3 as in second bar, 3rd beat
+	CharA_Bleep6	IGBM_DialogBleeps_Combined.wav	110	3.5	3.75			But here the unit is DECIMAL BARS, not bars and beats.
+	CharA_Bleep7	IGBM_DialogBleeps_Combined.wav	110	4	4.25			Because I didn't want to program a concept of beats per bar 
+								
+	CharB_Bleep1	IGBM_DialogBleeps_Combined.wav	110	4.5	4.75			
+	CharB_Bleep2	IGBM_DialogBleeps_Combined.wav	110	5	5.25			
+	CharB_Bleep3	IGBM_DialogBleeps_Combined.wav	110	5.5	5.75			
+	CharB_Bleep4	IGBM_DialogBleeps_Combined.wav	110	6	6.25			
+	CharB_Bleep5	IGBM_DialogBleeps_Combined.wav	110	6.5	6.75			
+	CharB_Bleep6	IGBM_DialogBleeps_Combined.wav	110	7	7.25			
+	CharB_Bleep7	IGBM_DialogBleeps_Combined.wav	110	7.5	7.75			
+	CharB_Bleep8	IGBM_DialogBleeps_Combined.wav	110	8	8.25			

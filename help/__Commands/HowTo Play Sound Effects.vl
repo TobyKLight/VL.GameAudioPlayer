@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Bc5FsA92iVPMVb9qMGFliq" LanguageVersion="2021.4.12.1374" Version="0.128">
+  <NugetDependency Id="I1YjwIJ5hGOL5hGzmSpzbU" Location="VL.CoreLib" Version="2021.4.12" />
+  <Patch Id="KWwyvAVo3KpNSKbGZrlZ8y">
+    <Canvas Id="QSZUk3kz9KaPUpoWHZQ15g" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="SG275rlpRS4LmcVUiTeIEB">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="IOFQE3WqXsaNmgBnYBakC9">
+        <Canvas Id="RsbUYazjIqrOzucfYc8Dv4" CanvasType="Group">
+          <Node Bounds="499,790,305,19" Id="MtY0KWiVteXQbxIdj6qBPR">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastSymbolSource="VL.GameAudioPlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GameAudioHost" />
+            </p:NodeReference>
+            <Pin Id="N13kmhusFJkQZD0hqx1UQd" Name="SFXMaxPlayers" Kind="InputPin" />
+            <Pin Id="V1UIFuRjsEuNCplVTDCJyI" Name="MusicMaxPlayers" Kind="InputPin" />
+            <Pin Id="EXGbaymuhQ2NV6CKP6WFkU" Name="DialogMaxPlayers" Kind="InputPin" />
+            <Pin Id="C83LPhbv8QiN065PxVj8Lr" Name="SFXTypeVolume" Kind="InputPin" />
+            <Pin Id="NRxOsVYHg2QPRmBTfgkNJG" Name="MusicTypeVolume" Kind="InputPin" />
+            <Pin Id="TKXRKzeMKhALeim8Ms9eca" Name="DialogTypeVolume" Kind="InputPin" />
+            <Pin Id="IBuf62t7eCiOqPniNCO2aB" Name="Debug_LogWarningsErrorsToConsole" Kind="InputPin" />
+            <Pin Id="MkTkaMqTsv1O4yd0nAonBA" Name="AudioRequests" Kind="InputPin" />
+            <Pin Id="FEmZh2KzkLBP3X8fdKJHj4" Name="AudioFilesFolder" Kind="InputPin" />
+            <Pin Id="URoBPaf1HLzMvLNRZFF9is" Name="RescanFiles" Kind="InputPin" />
+            <Pin Id="CfzsCF6hnVgQE0ubHV3RRv" Name="MediaConfigTSVFilePath" Kind="InputPin" />
+            <Pin Id="TDlOtY4U2mfQOwF3ohDDMZ" Name="DoPreload" Kind="InputPin" />
+            <Pin Id="TAaSTHbh5koPxPdFGcJ86F" Name="PreloadEdgeFadeTimeMS" Kind="InputPin" DefaultValue="20" />
+            <Pin Id="FejfSsupxrJN189serHKMI" Name="MediaKeysToPreload" Kind="InputPin" />
+            <Pin Id="MgRQNuOEChDMiFuhVofpkz" Name="Debug_PlayerInstancesByMediaType" Kind="OutputPin" />
+            <Pin Id="Rcu7wS4skaMO7SD28kzgJG" Name="ValidMediaKeys" Kind="OutputPin" />
+            <Pin Id="GVhfHIgcZWpNxSrdc5kxNo" Name="Debug_ValidMediaKeysFromMediaConfigTSV" Kind="OutputPin" />
+            <Pin Id="F2iyszZqVlcNPFxMnWfTAf" Name="Debug_ValidMediaKeysFromFileNames" Kind="OutputPin" />
+            <Pin Id="MrwBSuYhjIaO21le2ePtJU" Name="PreloadInProgress" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UJ4vqq4R64YLw7aBnEbuAT" Comment="Send" Bounds="1133,379,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CYWX6MVWw7dNJRKgiY6tgH" Comment="MediaKey" Bounds="995,122,115,15" ShowValueBox="true" isIOBox="true" Value="AI_GhostSeesPlayer">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Ing0KblIrnAO1IyDMujXBL" Comment="AudioFilesFolder" Bounds="683,611,228,15" ShowValueBox="true" isIOBox="true" Value="..\..\Data_TestAudio\">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Path" />
+              <CategoryReference Kind="Category" Name="IO" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:pathtype p:Assembly="VL.Core" p:Type="VL.Core.PathType">Directory</p:pathtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SXk9P8dzsGmLvb1MJyailg" Comment="MediaConfigTSVFilePath" Bounds="727,636,263,15" ShowValueBox="true" isIOBox="true" Value="..\..\Data_TestAudio\GameAudioPlayerTestSound.tsv">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NmjrlxnPT7hOtVoPHbFljS" Comment="DoRescanFiles" Bounds="709,666,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="993,421,125,19" Id="J3tinJ9s2FkPBfVdZMPvjz">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Commands" LastSymbolSource="VL.SFML.GameAudioPlayerR.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PlaySFX" />
+              <PinReference Kind="InputPin" Name="Node Context" />
+            </p:NodeReference>
+            <Pin Id="EEycru67JeUPjWrxTnzBk5" Name="MediaKey" Kind="InputPin" />
+            <Pin Id="DIyBgnADZqqMznrsG8JFCX" Name="LoopCount" Kind="InputPin" />
+            <Pin Id="HdQ5kCzWkhAMG9tjMbDie3" Name="Volume" Kind="InputPin" DefaultValue="0.5" />
+            <Pin Id="V7HafwqiP4xQVEORmIqI5P" Name="VolumeFadeUpTime" Kind="InputPin" />
+            <Pin Id="LxxWenxyNQNNm8UypjJufx" Name="Pan" Kind="InputPin" />
+            <Pin Id="GDDFXOyI9guPKcrvJp9nIj" Name="SeekTo" Kind="InputPin" />
+            <Pin Id="KrXN30J4Qi1PQQttjnMkYv" Name="SeekBarsMode" Kind="InputPin" />
+            <Pin Id="GKPLDhM4tzcPcU4hO9kZYf" Name="Send" Kind="InputPin" />
+            <Pin Id="PcNwhEFU0EQMTWQK9ormXp" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ULAZtZMem2qMZe2uYI8iBO" Comment="Send" Bounds="929,383,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CsnbdinA0KYNJJBqKZc3bx" Comment="MediaKey" Bounds="752,101,135,11" ShowValueBox="true" isIOBox="true" Value="Interact_GhostDropFruit">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="751,424,125,19" Id="BbCgsQ9JOOlO3VAbRSFkxj">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Commands" LastSymbolSource="VL.SFML.GameAudioPlayerR.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PlaySFX" />
+              <PinReference Kind="InputPin" Name="Node Context" />
+            </p:NodeReference>
+            <Pin Id="B5RrHmSNhfJLO5gO6ab0vj" Name="MediaKey" Kind="InputPin" />
+            <Pin Id="UqcgRnmJhuhLmGOgX9MnGv" Name="LoopCount" Kind="InputPin" />
+            <Pin Id="TAmbFhHhYDeLnDBwYGDux4" Name="Volume" Kind="InputPin" DefaultValue="0.5" />
+            <Pin Id="FkGpF75FK29MG10M9Luht6" Name="VolumeFadeUpTime" Kind="InputPin" />
+            <Pin Id="AvEgx6rXABPQcfkGNZmiaz" Name="Pan" Kind="InputPin" />
+            <Pin Id="Q4vhCmPPy5AOBebn5H35bt" Name="PreventTakeover" Kind="InputPin" />
+            <Pin Id="SqXGgbrxlYePjbduph5WYC" Name="SeekTo" Kind="InputPin" />
+            <Pin Id="Q5swv3b9wgZNJEExVL8Ecg" Name="SeekBarsMode" Kind="InputPin" />
+            <Pin Id="IkieC74WekkMllwZCVm0YT" Name="Retrigger" Kind="InputPin" />
+            <Pin Id="BCckdgPCprdLG1YFITdqpF" Name="Send" Kind="InputPin" />
+            <Pin Id="PjXcACuwYb6NKq9F8f5tTE" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="N5qa6Hq6sluMyzHT82qCQo" Comment="Send" Bounds="628,169,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S7bjX5M6A6qMxleQVhSYIf" Comment="MediaKey" Bounds="505,59,115,15" ShowValueBox="true" isIOBox="true" Value="Interact_PickUpFruit">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="M5qndT0j7LjMHoPeMQvpOM" Comment="Volume" Bounds="563,99,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="505,203,125,19" Id="KVDA3fP20V7OO4d3jLO2Gg">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Commands" LastSymbolSource="VL.SFML.GameAudioPlayerR.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PlaySFX" />
+              <PinReference Kind="InputPin" Name="Node Context" />
+            </p:NodeReference>
+            <Pin Id="A1zY72UHynMNlbsWovvPNW" Name="MediaKey" Kind="InputPin" />
+            <Pin Id="FdX6MgXCfmyMawVpj2tCaQ" Name="Volume" Kind="InputPin" />
+            <Pin Id="MfbGjdZwmOWMadbIsDUIWb" Name="Send" Kind="InputPin" />
+            <Pin Id="Ph88YFr0muXMipXjnn7mtv" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HzJip0LHsimPwtB9vVaB49" Comment="MediaKeysToPreload" Bounds="821,713,124,65" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value>
+              <Item>Interact_PickUpFruit</Item>
+              <Item>Interact_GhostDropFruit</Item>
+              <Item>AI_GhostSeesPlayer</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="PsScZkWveNEMpoQlO8EEa6" Comment="DoPreload" Bounds="762,690,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="654,513,65,19" Id="H9cxBLJ0PsSNy9Lb99rGtk">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastSymbolSource="VL.SFML.GameAudioPlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Merge (PinGroup)" />
+            </p:NodeReference>
+            <Pin Id="HRbV7wInqhcPmDegoQD8rR" Name="Value" Kind="InputPin" />
+            <Pin Id="GdhWFMrxtK5LJzneuKux9Q" Name="Value 2" Kind="InputPin" />
+            <Pin Id="JCG0g1nrYenMD0gAScEYLN" Name="Result" Kind="OutputPin" />
+            <Pin Id="F4mErsO3gvBNQkJju9cqdj" Name="Value 3" Kind="InputPin" />
+            <Pin Id="MH8SkQt6pnuNEPqQotZs6m" Name="Value 4" Kind="InputPin" />
+            <Pin Id="F0WIhTnOlDVMQHc8DOeXmT" Name="Value 5" Kind="InputPin" />
+          </Node>
+          <Node Bounds="1207,431,75,19" Id="HQlHKBBhrTcQYQSG2Ih3Nl">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastSymbolSource="VL.GameAudioPlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StopAllMedia" />
+            </p:NodeReference>
+            <Pin Id="HBdHztudslOMNCw1hg7wG2" Name="Send" Kind="InputPin" />
+            <Pin Id="MWBRX99OxnULRYS5qN4sCE" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ES17tQ5EGUiLCClji8gnKA" Comment="Send" Bounds="1214,392,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ms76DD9hme9LsAuhBu1gpm" Comment="Debug_LogWarningsErrorsToConsole" Bounds="642,573,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Ra9eVwHJ8UfL5Ft4H7YxFv" Name="" Bounds="10,18,452,765" />
+          <Pad Id="QtKtr3hUzoAML0p9w3N8hW" Bounds="8,30,453,756" ShowValueBox="true" isIOBox="true" Value="PlaySFX command &#xD;&#xA;&#xD;&#xA;(Standard pins)&#xD;&#xA;1.Supply a valid MediaKey. Can be any valid mediakey, system doesn't care if it's really SFX or not. &#xD;&#xA;&#xD;&#xA;2. Set volume on play from 0 -1 (to change volume once already playing see 'Change Volume' helppatch). &#xD;&#xA;&#xD;&#xA;(Hidden pins)&#xD;&#xA;3.Set a LoopCount. &#xD;&#xA;&#x9;0 and 1 both mean play once, do not loop. &#xD;&#xA;&#x9;2 or more indicates play this number of times. &#xD;&#xA;&#x9;-1 means loop forever &#xD;&#xA;&#x9;NOTE loops can be glitchy if they are not preloaded&#xD;&#xA;&#x9;See the helpatch on Preloading vs Streaming for more info.&#xD;&#xA;&#xD;&#xA;4. Set a volume fade up time&#xD;&#xA;  &#xD;&#xA;5. Set Pan from -1 to 1. It's a bit complicated due to the SFML implementation of positioning. See 'Pan Media' helppatch&#xD;&#xA;&#xD;&#xA;6.PreventTakeover means the player should never be affected by other play commands, This is particularly the case for sound effects if you have a limited number of max players(*) and many sound effects and the same time normally the oldest will be taken over. &#xD;&#xA;See the helpatch 'Play Cases in Detail' for the nitty gritty.&#xD;&#xA;&#xD;&#xA;7. Set Retrigger. When on if you send the play command again it will restart the media. When off you will get a warning in the log and the media continues playing.  &#xD;&#xA;&#xD;&#xA;This is on by default for sound effects so that you can achieve a 'mario banging head on the coinbox' type repetition. Note because of this it's not possible to layer multiple instances of the same media, although you can get around this by setting up a bunch of unique media keys that point to the same sound data.&#xD;&#xA;&#xD;&#xA;8. Set Seek options. See helppatch 'Seek in Media'&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PUxGxdoKlUJP3QUfjLOV7c" Bounds="454,47,42,37" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="T8mr2pPCopBLJeh6ckxsTP" Bounds="509,89,42,37" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AvBAS5GNB5XPwPxCZW3vxV" Comment="ValidMediaKeys" Bounds="525,840,221,127" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="RtZrvOqizOONDWdyQHJhsL" Comment="LoopCount" Bounds="777,143,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SOSs3WfFVAxMOl0IJAfnQO" Bounds="722,132,42,37" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MYgvhZpgJlEQUIiLf5EgwH" Comment="Pan" Bounds="834,212,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CbTCy17CJnsNHyAMgwKAav" Comment="VolumeFadeUpTime" Bounds="810,181,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UGtoXRKXsU9OjDdzVSkevW" Bounds="764,169,42,37" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MCLINBMUuNsORNIC1C5QkF" Bounds="793,199,42,37" ShowValueBox="true" isIOBox="true" Value="5.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="V6UEFUYLr8tMeNYm28EyHu" Comment="PreventTakeover" Bounds="854,245,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FjgkVIIlMSlOyNQ7PHwLmo" Comment="SeekTo" Bounds="1097,219,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="U62zkezAUQrN27pVdkUpea" Comment="SeekBarsMode" Bounds="1115,241,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KB526buSqAsQEtg7rumaxl" Comment="Retrigger" Bounds="913,313,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SsLpNlRfvqiNGOVGW9k9zj" Bounds="807,243,42,37" ShowValueBox="true" isIOBox="true" Value="6.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ahtcl7Cyfq3N6hfrwAnx4F" Bounds="860,312,42,37" ShowValueBox="true" isIOBox="true" Value="7.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ns3HfTGnPc3NElRCP4NX8y" Bounds="1052,220,42,37" ShowValueBox="true" isIOBox="true" Value="8.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ADdoK4grX47P3RR8KxUpTh" Comment="SFXMaxPlayers" Bounds="504,542,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="FHtwkdOeH9PNi2fiiWEKnf" Bounds="486,508,42,37" ShowValueBox="true" isIOBox="true" Value="*.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">18</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SloZ75mUMA7P1quVSD4JiO" Comment="PreloadInProgress" Bounds="856,838,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1113,559" Id="CxqZM86D3YMOHWnLcZBvLT">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastSymbolSource="VL.GameAudioPlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MediaStatus" />
+            </p:NodeReference>
+            <Pin Id="KRuj35ZwvFqO0PFj63h4uw" Name="MediaKey" Kind="InputPin" />
+            <Pin Id="R5xb4soo7EdNXL2xBGreX5" Name="Send" Kind="InputPin" />
+            <Pin Id="MbI7j5h1TanONCmRXhROqv" Name="Result" Kind="OutputPin" />
+            <Pin Id="DhyRxrykSv5QZH9jcBV1Bf" Name="FoundPlayingMedia" Kind="OutputPin" />
+            <Pin Id="QH0mqwdwnszNstFlflmUAi" Name="IsPlaying" Kind="OutputPin" />
+            <Pin Id="GEKUJ5OovcLND9WMmekqYN" Name="TotalPosition" Kind="OutputPin" />
+            <Pin Id="QECuh5FQvKoMA5rarf49Yy" Name="TotalDuration" Kind="OutputPin" />
+            <Pin Id="Fy8a2Th7AUeN5lga7C4sME" Name="SampleRate" Kind="OutputPin" />
+            <Pin Id="JDJEtwcp6TMLSngibdJhIc" Name="Channel Count" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="S2w9AaT1a17QIMGvxXO0wH" Bounds="723,527" />
+          <Pad Id="MYI0brhVqDlO2yFOgTLiHr" Comment="SampleRate" Bounds="1220,604,74,12" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="O4DeXx568MVLdm8ROojG2l" Name="Create" />
+        <Patch Id="NSCLSGlL5EtPq5aFiZecsg" Name="Update" />
+        <ProcessDefinition Id="J4gHHSAHE7eNvZl7124apv">
+          <Fragment Id="F5Nsezh3Ve1PiLHmAaH6TO" Patch="O4DeXx568MVLdm8ROojG2l" Enabled="true" />
+          <Fragment Id="QVmY8cj9JiZO97X65Sa5FM" Patch="NSCLSGlL5EtPq5aFiZecsg" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="R6JZKDIKiUaLJthw3zjKAj" Ids="Ing0KblIrnAO1IyDMujXBL,FEmZh2KzkLBP3X8fdKJHj4" />
+        <Link Id="JU7qi5Fp6MKOwfqtVnRHrj" Ids="SXk9P8dzsGmLvb1MJyailg,CfzsCF6hnVgQE0ubHV3RRv" />
+        <Link Id="RFZcmLAe7E5NMovDCVCYr8" Ids="NmjrlxnPT7hOtVoPHbFljS,URoBPaf1HLzMvLNRZFF9is" />
+        <Link Id="Sy0NXywTkFhMyHDp6txJxj" Ids="CYWX6MVWw7dNJRKgiY6tgH,EEycru67JeUPjWrxTnzBk5" />
+        <Link Id="R3zmXg0ZqWNPeLIAsOuKNK" Ids="UJ4vqq4R64YLw7aBnEbuAT,GKPLDhM4tzcPcU4hO9kZYf" />
+        <Link Id="FOEcKAvOdLxLUWzq86Esyi" Ids="CsnbdinA0KYNJJBqKZc3bx,B5RrHmSNhfJLO5gO6ab0vj" />
+        <Link Id="QCRyZ82YsiBPojxxPcEjSJ" Ids="ULAZtZMem2qMZe2uYI8iBO,BCckdgPCprdLG1YFITdqpF" />
+        <Link Id="Mz5O2XHLy00O9Xn6PxKzZP" Ids="M5qndT0j7LjMHoPeMQvpOM,FdX6MgXCfmyMawVpj2tCaQ" />
+        <Link Id="SXEpdglTBX0O7COQFaYLJr" Ids="S7bjX5M6A6qMxleQVhSYIf,A1zY72UHynMNlbsWovvPNW" />
+        <Link Id="SaE6xz9DIKeQK1kZMpIfBW" Ids="N5qa6Hq6sluMyzHT82qCQo,MfbGjdZwmOWMadbIsDUIWb" />
+        <Link Id="Dw9vajyBTqQOvRbAEW87Ag" Ids="PsScZkWveNEMpoQlO8EEa6,TDlOtY4U2mfQOwF3ohDDMZ" />
+        <Link Id="USklEWyF4f1NM78Z5YLgXR" Ids="Ph88YFr0muXMipXjnn7mtv,HRbV7wInqhcPmDegoQD8rR" />
+        <Link Id="EWTqwaMD3Y0OlqPdOKN4Cg" Ids="PjXcACuwYb6NKq9F8f5tTE,GdhWFMrxtK5LJzneuKux9Q" />
+        <Link Id="NWW8u62rvFIMsmHLqbMsuG" Ids="PcNwhEFU0EQMTWQK9ormXp,F4mErsO3gvBNQkJju9cqdj" />
+        <Link Id="ETGcTE5KEPdQUwBgNhtDLs" Ids="JCG0g1nrYenMD0gAScEYLN,MkTkaMqTsv1O4yd0nAonBA" />
+        <Link Id="Vb2GqCRwSAyOK1lhoqm3ye" Ids="MWBRX99OxnULRYS5qN4sCE,MH8SkQt6pnuNEPqQotZs6m" />
+        <Link Id="JGWqMV7yiiIOfSh8XGQEbg" Ids="ES17tQ5EGUiLCClji8gnKA,HBdHztudslOMNCw1hg7wG2" />
+        <Link Id="IFcx8OTMXJxONZzzvpdCuV" Ids="Ms76DD9hme9LsAuhBu1gpm,IBuf62t7eCiOqPniNCO2aB" />
+        <Link Id="TUNdSyHVpdbOhBZXp3IA8U" Ids="Rcu7wS4skaMO7SD28kzgJG,AvBAS5GNB5XPwPxCZW3vxV" />
+        <Link Id="UPUDnHoTCMMQY8WQy3NIQX" Ids="RtZrvOqizOONDWdyQHJhsL,UqcgRnmJhuhLmGOgX9MnGv" />
+        <Link Id="DUx4lV5A4NKNqY94ahkLXA" Ids="MYgvhZpgJlEQUIiLf5EgwH,AvEgx6rXABPQcfkGNZmiaz" />
+        <Link Id="SJ82V4bsSBrPe9boRKRYRv" Ids="CbTCy17CJnsNHyAMgwKAav,FkGpF75FK29MG10M9Luht6" />
+        <Link Id="KSns2lFOeAIQcU1dBSMsSk" Ids="V6UEFUYLr8tMeNYm28EyHu,Q4vhCmPPy5AOBebn5H35bt" />
+        <Link Id="MyFLSeu5p7JP8ZFbqQDmOV" Ids="FjgkVIIlMSlOyNQ7PHwLmo,GDDFXOyI9guPKcrvJp9nIj" />
+        <Link Id="KHUEshSjUppNIY1HWdZLew" Ids="U62zkezAUQrN27pVdkUpea,KrXN30J4Qi1PQQttjnMkYv" />
+        <Link Id="BYwHkOBvZrmNCxX6KAi5zd" Ids="KB526buSqAsQEtg7rumaxl,IkieC74WekkMllwZCVm0YT" />
+        <Link Id="ENx6U2jSSpsMOlwiv4S8M6" Ids="ADdoK4grX47P3RR8KxUpTh,N13kmhusFJkQZD0hqx1UQd" />
+        <Link Id="H8XNIGd0pwPObfrxHwxwy1" Ids="MrwBSuYhjIaO21le2ePtJU,SloZ75mUMA7P1quVSD4JiO" />
+        <Link Id="EQvhE8hCmfsNxEuCaWUi7Y" Ids="MbI7j5h1TanONCmRXhROqv,S2w9AaT1a17QIMGvxXO0wH,F0WIhTnOlDVMQHc8DOeXmT" />
+        <Link Id="VSIInSLqlslNaUAKpAxo3G" Ids="Fy8a2Th7AUeN5lga7C4sME,MYI0brhVqDlO2yFOgTLiHr" />
+        <Link Id="EuEac6MWORfQQB7RnMwOTy" Ids="HzJip0LHsimPwtB9vVaB49,FejfSsupxrJN189serHKMI" />
+        <Link Id="MWIMZ3bFTEjLkXy6ufq3Gk" Ids="CsnbdinA0KYNJJBqKZc3bx,KRuj35ZwvFqO0PFj63h4uw" />
+        <Link Id="IZCziYY0blLMxlWoc3XwDk" Ids="ULAZtZMem2qMZe2uYI8iBO,R5xb4soo7EdNXL2xBGreX5" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="Bl3KULSNzyDQJgogFjlbzQ" Location="../../VL.GameAudioPlayer.vl" />
+</Document>

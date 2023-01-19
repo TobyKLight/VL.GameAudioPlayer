@@ -1,7 +1,9 @@
 # VL.GameAudioPlayer
 High level command based audio player for vvvv Gamma.
 
-Install from nuget... coming soon 
+Install from nuget
+In Gamma go to top left menu>Manage Nugets>Command line and type 
+```nuget install VL.GameAudioPlayer```
 
 Video tutorial.... coming soon 
 
@@ -17,6 +19,8 @@ Video tutorial.... coming soon
 * Documented through interactive helppatches 
 * Extract BPM and Bar information for visualisation 
 * Includes original test media (also released under MIT licence, although if you use these in a project a credit as composer would be appreciated...)  
+
+![image](https://user-images.githubusercontent.com/4467208/213531125-c706eafe-1181-4256-9f15-136989c2fbd7.png)
 
 ## Expectations
 * Only plays out the default sound device, no ASIO 

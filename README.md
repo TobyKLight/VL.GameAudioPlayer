@@ -16,7 +16,7 @@ Video tutorial.... coming soon
 * Potentially cross-platform (only tested on Windows so far)  
 * Documented through interactive helppatches 
 * Extract BPM and Bar information for visualisation 
-* Includes original test media (also released under MIT licence, although if you used it a credit as composer would be appreciated...)  
+* Includes original test media (also released under MIT licence, although if you use these in a project a credit as composer would be appreciated...)  
 
 ## Expectations
 * Only plays out the default sound device, no ASIO 

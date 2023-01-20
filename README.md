@@ -44,6 +44,10 @@ Video tutorial.... coming soon
 * PlayDialog functionality is there but not tested properly because I didn't have a use case. I can imagine there are specific needs for working with lots of dialog (eg managing localisation or linking mediakeys to dialog data for subtitle display). If someone has a project with a dialog usecase maybe you could contribute to this? 
 * Positioning functionality is just left to right panning. In theory the underlying library supports 3D positioning. Again I didn't have a usecase during development so if you've got one and you would like to contribute please get in touch. 
 
+## Changelog 
+* 1.0.1 improved helppatches, added function for MediaStatus command to continuing following the same player while next media has the same path. 
+* 1.0.0 initial release 
+
 ## Licence 
 MIT 
 

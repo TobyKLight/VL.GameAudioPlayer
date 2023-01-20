@@ -41,8 +41,8 @@ Video tutorial.... coming soon
 
 ## Status 
 * 90% complete and working 
-* PlayDialog functionality is there but not tested properly because I didn't have a use case. I can imagine there are needs here eg managing localisation or linking mediakeys to dialog data for subtitle display. If someone has a project with a dialog usecase maybe you could contribute to this? 
-* Positioning functionality is just left to right pan, in theory the underlying library supports 3D positioning. Again I didn't have a usecase during development so if you've got one and you would like to contribute please get in touch. 
+* PlayDialog functionality is there but not tested properly because I didn't have a use case. I can imagine there are specific needs for working with lots of dialog (eg managing localisation or linking mediakeys to dialog data for subtitle display). If someone has a project with a dialog usecase maybe you could contribute to this? 
+* Positioning functionality is just left to right panning. In theory the underlying library supports 3D positioning. Again I didn't have a usecase during development so if you've got one and you would like to contribute please get in touch. 
 
 ## Licence 
 MIT 

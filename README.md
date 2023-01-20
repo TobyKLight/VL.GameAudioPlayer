@@ -1,5 +1,6 @@
 # VL.GameAudioPlayer
 High level command based audio player for vvvv Gamma.
+Tested with vvvv 2021.4.12 stable.  
 
 Install from nuget
 In Gamma go to top left menu>Manage Nugets>Command line and type 

@@ -27,7 +27,9 @@ Video tutorial.... coming soon
 * Only plays out the default sound device, no ASIO 
 * Only plays audio files, no recording or live inputs 
 * No realtime effects, beat detection or FFT 
-(If you need these functions see [VL.Audio](https://github.com/vvvv/VL.Audio) 
+
+(If you need these functions see [VL.Audio](https://github.com/vvvv/VL.Audio) )
+
 * No multitrack support 
 * Not intended for tight sync with video files.  
 * Does not support MP3 (due to underlying library limitation) 

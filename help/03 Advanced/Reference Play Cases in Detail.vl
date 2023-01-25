@@ -21,7 +21,7 @@
             </p:NodeReference>
             <Pin Id="CLswTJsepl8Nc237izOr1K" Name="SFXMaxPlayers" Kind="InputPin" />
             <Pin Id="Ijtkhdap0KbLgLshYfvZqZ" Name="MusicMaxPlayers" Kind="InputPin" />
-            <Pin Id="MzJinYPLoNpML5IMVtJG4d" Name="DialogMaxPlayers" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="MzJinYPLoNpML5IMVtJG4d" Name="DialogMaxPlayers" Kind="InputPin" />
             <Pin Id="TmlNcZLiX9oLEESA70kKlo" Name="SFXTypeVolume" Kind="InputPin" />
             <Pin Id="Lky6aZETlTLNqZhbhc1YB0" Name="MusicTypeVolume" Kind="InputPin" />
             <Pin Id="HNfV8W39AQlLkm5rRKHL03" Name="DialogTypeVolume" Kind="InputPin" />
@@ -35,9 +35,8 @@
             <Pin Id="R46Hl7RXJvOLm58VaUXdk7" Name="MediaKeysToPreload" Kind="InputPin" />
             <Pin Id="KmrF9HJCUCdNF0T6GEuD8O" Name="Debug_PlayerInstancesByMediaType" Kind="OutputPin" />
             <Pin Id="UvTVpFoLQsaLXPF9P28qHl" Name="ValidMediaKeys" Kind="OutputPin" />
-            <Pin Id="MzALLEMe1ULPejX4NYETQO" Name="Debug_ValidMediaKeysFromMediaConfigTSV" Kind="OutputPin" />
             <Pin Id="C1uYObDz04rPQ1FvvBQSQn" Name="PreloadInProgress" Kind="OutputPin" />
-            <Pin Id="LChV6nyvl5gMkf1iwM8KUC" Name="FXMaxPlayers" Kind="InputPin" DefaultValue="2" />
+            <Pin Id="LgEsvzFQzNsLSRyI9itZ65" Name="PreloadedMediaKeys" Kind="OutputPin" />
           </Node>
           <Pad Id="NAT61z3nr34QcpRVLEQfdC" Comment="AudioFilesFolder" Bounds="582,1051,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\Data_TestAudio\">
             <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
@@ -123,11 +122,6 @@
               <Item>Music_NeverAgain_ArpegB</Item>
               <Item>Music_NeverAgain_MainGrooveArpeg</Item>
               <Item>Music_NeverAgain_MainGrooveArpeg</Item>
-            </p:Value>
-          </Pad>
-          <Pad Id="IxdaN1VPPKiNRyb9sUUskB" Comment="Debug_ValidMediaKeysFromMediaConfigTSV" Bounds="633,1280,349,95" ShowValueBox="true" isIOBox="true">
-            <p:Value>
-              <Item></Item>
             </p:Value>
           </Pad>
           <Pad Id="PYmMXP5pWPjMfaAA3ZhEcd" Comment="MediaKey" Bounds="92,15,134,15" ShowValueBox="true" isIOBox="true" Value="Menu_NewGameConfirm">
@@ -554,7 +548,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="U9Onah8w3V0OwoD8PbAaPq" Name="Bounds" Kind="InputPin" DefaultValue="1016, 136, 496, 484" />
+            <Pin Id="U9Onah8w3V0OwoD8PbAaPq" Name="Bounds" Kind="InputPin" DefaultValue="796, 312, 496, 484" />
             <Pin Id="FCFpxeE0BPIQW821SJBDlZ" Name="Input" Kind="InputPin" />
             <Pin Id="V38g1R8CoYNMgeoMtpA8BF" Name="Color" Kind="InputPin" />
             <Pin Id="ObU22AnUfGAMem4LGrSFgk" Name="Clear" Kind="InputPin" />
@@ -1944,14 +1938,13 @@
             </p:NodeReference>
             <Pin Id="I2rvEEfngAVQWD5aH6gj1S" Name="MediaKey" Kind="InputPin" />
             <Pin Id="Bk7lMFKAbBaNwKPdZ75rZG" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="QNT7NimfaUiPoflHvTnVTH" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="KMN2l4NZpN7OJZLYoL4hKi" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="AwZi0ijtgRgM3CQ2wN0gyC" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="QNT7NimfaUiPoflHvTnVTH" Name="Volume" Kind="InputPin" />
+            <Pin Id="KMN2l4NZpN7OJZLYoL4hKi" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="AwZi0ijtgRgM3CQ2wN0gyC" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="Lokbt4c0t0YN4ISsVRh6Zc" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="EVPKQwgJkQnLLRSSLO0yBd" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="EVPKQwgJkQnLLRSSLO0yBd" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="D0BxRA9fbJTNy9Xbf2smeN" Name="Send" Kind="InputPin" />
             <Pin Id="F1v5FaTGZqwPkcmxkpzfty" Name="Result" Kind="OutputPin" />
-            <Pin Id="NCBDVLhehmIOxTzEdiGGCM" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="FGNJFQ1edPPNqrbZR5gZ58" Comment="" Bounds="1798,57,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
@@ -2093,14 +2086,13 @@
             </p:NodeReference>
             <Pin Id="EC8WcAUiGlLMlkh9lmcMPP" Name="MediaKey" Kind="InputPin" />
             <Pin Id="VvfqwJ3xIu1OyZnBBgEzN3" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="MGv8qWPb5CUPkAp7i1HLNc" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="PNF8GJGhrQDMNH1XR2ved5" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="SlDkWVBwtVVLuZ7Ps39N6Q" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="MGv8qWPb5CUPkAp7i1HLNc" Name="Volume" Kind="InputPin" />
+            <Pin Id="PNF8GJGhrQDMNH1XR2ved5" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="SlDkWVBwtVVLuZ7Ps39N6Q" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="J0klDw8HY6PNUinli31Wur" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="Lk1b5afcLztOytUiGyvHMx" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="Lk1b5afcLztOytUiGyvHMx" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="MHbrnqQcgwHOFHLlOYcdpM" Name="Send" Kind="InputPin" />
             <Pin Id="DU2sAn6o3IDOtmBkiT4tKr" Name="Result" Kind="OutputPin" />
-            <Pin Id="K54Mr83BOzRPCHVut1hhkZ" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="Jf1dVZ6nQYqQACWNT3UhjY" Comment="" Bounds="1788,326,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
@@ -2156,14 +2148,13 @@
             </p:NodeReference>
             <Pin Id="Vw5ePdoBD8VOWOWJlZkr4G" Name="MediaKey" Kind="InputPin" />
             <Pin Id="ET45c7euzo0PeZWO3Z5FAC" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="G4PZr7UIMmAMXuIQ9Xffwf" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="JBsuoH09SCKLTNwrxXQiR1" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="JR3gAFuYtMoMpMYmA1TclU" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="G4PZr7UIMmAMXuIQ9Xffwf" Name="Volume" Kind="InputPin" />
+            <Pin Id="JBsuoH09SCKLTNwrxXQiR1" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="JR3gAFuYtMoMpMYmA1TclU" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="HYPWa8ABmb0NDwuDz1TBoi" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="C3d049XT16yL3gcZRAF7Qg" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="C3d049XT16yL3gcZRAF7Qg" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="Rz0LL8ZXldaNzUziDa55nB" Name="Send" Kind="InputPin" />
             <Pin Id="NOeHHr6azscPBHIq7dk5m8" Name="Result" Kind="OutputPin" />
-            <Pin Id="D9M1RmBDJI0Onz9x00bIGR" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="DoqmuD9VhvZN3j9F2umIqE" Comment="" Bounds="1816,637,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
@@ -2598,9 +2589,9 @@
             <Pin Id="VgVmp2ZOCXUNW49INmVxKH" Name="MediaKey" Kind="InputPin" />
             <Pin Id="HBnF4JsQxtBMoqvBnlDISQ" Name="LoopCount" Kind="InputPin" />
             <Pin Id="BxQ5QPY9bLBLzme7Ay1uKA" Name="Volume" Kind="InputPin" />
-            <Pin Id="Mp9ZC6fheVYP4rL4LLB6Vq" Name="DelayPlayRequestTime" Kind="InputPin" />
-            <Pin Id="BAVBdSmjKu2LufR5t82x4U" Name="VolumeFadeUpTime" Kind="InputPin" />
-            <Pin Id="MIinZs1VMqHPxQ1OZK8YZl" Name="TryPlayNext" Kind="InputPin" />
+            <Pin Id="Mp9ZC6fheVYP4rL4LLB6Vq" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0.5" />
+            <Pin Id="BAVBdSmjKu2LufR5t82x4U" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="2" />
+            <Pin Id="MIinZs1VMqHPxQ1OZK8YZl" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="IRI80lZiWhZPETLsxH80wQ" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
             <Pin Id="DxENSztXkEJQZWJaR7isId" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="CGiHoYHNNfEN41iMQdC8kG" Name="Send" Kind="InputPin" />
@@ -2633,9 +2624,9 @@
             <Pin Id="CUTurlNK1kYQGPaFoZnukW" Name="MediaKey" Kind="InputPin" />
             <Pin Id="TwyIXA5Yx9xPAtkLwmVWcs" Name="LoopCount" Kind="InputPin" />
             <Pin Id="VZKU5fprTimNkgetAWpewH" Name="Volume" Kind="InputPin" />
-            <Pin Id="VDLlu9xOoTVNQ0YQGjtIKd" Name="DelayPlayRequestTime" Kind="InputPin" />
-            <Pin Id="G5AJSePAKD8OTtDYEE72dH" Name="VolumeFadeUpTime" Kind="InputPin" />
-            <Pin Id="DIwOSKU5BnZP8fgbpPYcTY" Name="TryPlayNext" Kind="InputPin" />
+            <Pin Id="VDLlu9xOoTVNQ0YQGjtIKd" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0.5" />
+            <Pin Id="G5AJSePAKD8OTtDYEE72dH" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="2" />
+            <Pin Id="DIwOSKU5BnZP8fgbpPYcTY" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="L4B7wMHqNUiOu4jlXzgXSx" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
             <Pin Id="TfaoRAikpOCQYGzVfxPVIu" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="JJ9HDaiewqpOcCiGfCoCGG" Name="Send" Kind="InputPin" />
@@ -2710,7 +2701,7 @@
             <Pin Id="D1jF2DzvY37PvwdKAwcPXd" Name="DelayPlayRequestTime" Kind="InputPin" />
             <Pin Id="RUnPCz64vEPQBTBjYNLO34" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="PZ0vwEmzkxRLoH1amhLGze" Name="Retrigger" Kind="InputPin" />
-            <Pin Id="H1xT5VT4NjQN1kj6GPbQ8Y" Name="TryPlayNext" Kind="InputPin" />
+            <Pin Id="H1xT5VT4NjQN1kj6GPbQ8Y" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="CMOpyoJmPoCNLhEDetiVet" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
             <Pin Id="K4H66Yp5W4WN7XC0Z6fKzw" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="GiRuhSH3Aa8PlFu8VbJHwi" Name="Send" Kind="InputPin" />
@@ -2746,7 +2737,7 @@
             <Pin Id="I48oD4B5K2HLWSVdr39PnP" Name="DelayPlayRequestTime" Kind="InputPin" />
             <Pin Id="UOOO5sEnEKILNgw5o5mWxM" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="E53N9FrJUrENOSAjr8nIDN" Name="Retrigger" Kind="InputPin" />
-            <Pin Id="GneMkhiefsOOnggai3J5XR" Name="TryPlayNext" Kind="InputPin" />
+            <Pin Id="GneMkhiefsOOnggai3J5XR" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="EoifT42kxUkQAhe5sIMRAu" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
             <Pin Id="VW51wX6B4uKNfKRSt18if3" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="QAea275JUGeLBIlqMuuUHn" Name="Send" Kind="InputPin" />
@@ -2819,16 +2810,15 @@
             </p:NodeReference>
             <Pin Id="QKIYXrQ5Ma2OxxOeDKIGJv" Name="MediaKey" Kind="InputPin" />
             <Pin Id="CNhp0Rrc5ZiODiJmroGB4a" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="KfKScivHQrfM1a1ywLfyrG" Name="Volume" Kind="InputPin" DefaultValue="1.67" />
-            <Pin Id="MeHOdijbrmSMZKytqGWmR0" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="OW64LdlZRFsMPBrqqYcGEy" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="KfKScivHQrfM1a1ywLfyrG" Name="Volume" Kind="InputPin" />
+            <Pin Id="MeHOdijbrmSMZKytqGWmR0" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="OW64LdlZRFsMPBrqqYcGEy" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="EL9KwhUuzoULGrAAQ99mCb" Name="Retrigger" Kind="InputPin" />
             <Pin Id="MyU6LYtu8ZrN6ii0oic3vA" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="TdqDGA4RPx4PS76aNICJGj" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="IHyWcXzcbiqN0T7tPSlh94" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="IHyWcXzcbiqN0T7tPSlh94" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="O3SCzBaS5wYLtu59lMXss3" Name="Send" Kind="InputPin" />
             <Pin Id="V7pPTGQ9g6gNnHVqna6hbO" Name="Result" Kind="OutputPin" />
-            <Pin Id="UTN5CVchKMYONqWxj44nx8" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="Vnfyrw8PJlgQXeuuOSr8nK" Comment="LoopCount" Bounds="3018,446,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -2840,7 +2830,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GxdqgTmZdjfPfPH4411Vkz" Comment="" Bounds="3189,470,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="GxdqgTmZdjfPfPH4411Vkz" Comment="" Bounds="3198,472,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -2855,19 +2845,18 @@
               <Choice Kind="ProcessAppFlag" Name="PlayMusic" />
             </p:NodeReference>
             <Pin Id="H1RJhSSOUHOMgzIJMHnnnZ" Name="MediaKey" Kind="InputPin" />
-            <Pin Id="DS0A9QhUSaILctGDfDjWrd" Name="LoopCount" Kind="InputPin" DefaultValue="-1" />
-            <Pin Id="A8LprdwdKBmPvOj2o2qCGM" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="F09h4ZltIL8NexkBfQ2TJm" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="RNCL9dzAyZcQXE3KJGs7qJ" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="DS0A9QhUSaILctGDfDjWrd" Name="LoopCount" Kind="InputPin" />
+            <Pin Id="A8LprdwdKBmPvOj2o2qCGM" Name="Volume" Kind="InputPin" />
+            <Pin Id="F09h4ZltIL8NexkBfQ2TJm" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="RNCL9dzAyZcQXE3KJGs7qJ" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="NGR4yG3fzZxPjkG3qf0voF" Name="Retrigger" Kind="InputPin" />
             <Pin Id="FvHYOEjmxSkL62HwYXe52G" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="JYfR3k1iao3QDzhBf2Coow" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="KyxWkd0DWOKOXGmw5sdkJv" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="KyxWkd0DWOKOXGmw5sdkJv" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="QgK6fZ5TMjFQS4Z8QA85GW" Name="Send" Kind="InputPin" />
             <Pin Id="Hot7XRpjGv2M8lUITtp6WS" Name="Result" Kind="OutputPin" />
-            <Pin Id="CVnWCs7ejQbOIsVqGKdqIE" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
-          <Pad Id="UDH7xMxTr9lO0hgaL82mK2" Comment="" Bounds="3201,546,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="UDH7xMxTr9lO0hgaL82mK2" Comment="" Bounds="3223,548,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -2957,7 +2946,7 @@
               <Item>Music_NeverAgain_BeatBOutTail</Item>
             </p:Value>
           </Pad>
-          <Pad Id="Uy2NYYUyc0VPzUq1bN5xhH" Comment="" Bounds="3534,144,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Uy2NYYUyc0VPzUq1bN5xhH" Comment="" Bounds="3542,144,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -2997,16 +2986,15 @@
             </p:NodeReference>
             <Pin Id="OkNsilrHnWFNig1QxJf6bP" Name="MediaKey" Kind="InputPin" />
             <Pin Id="JI2aT0wIKlmNiEudrzHJYH" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="OgpakUjUHhXPoTRMhCZYJ7" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="GXuqCsoD4cxLCHGfWCPivT" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="TwEtKooCkFVPGBAOtjSAb5" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="OgpakUjUHhXPoTRMhCZYJ7" Name="Volume" Kind="InputPin" />
+            <Pin Id="GXuqCsoD4cxLCHGfWCPivT" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="TwEtKooCkFVPGBAOtjSAb5" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="IaQ3RJ14OQAMDReajJhEtv" Name="Retrigger" Kind="InputPin" />
             <Pin Id="NSf8hcUTuZeMxIVGgCO2x4" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="FWzd250qWprOEp8nDeCapL" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="GuIIzHovRM5PEJok9obP6s" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="GuIIzHovRM5PEJok9obP6s" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="U1C0Tqz1Q1mQL0AsN6GE0Z" Name="Send" Kind="InputPin" />
             <Pin Id="CdzdIUnzVIrL9KFvILJB2v" Name="Result" Kind="OutputPin" />
-            <Pin Id="AJ9vyGk9dJRNh12Pcr8Iam" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="Oum2V3LnTEsL196M7Go4hT" Comment="LoopCount" Bounds="3364,-1,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3018,7 +3006,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QUPNbPuWcBMOBrgTNppfvd" Comment="" Bounds="3550,17,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="QUPNbPuWcBMOBrgTNppfvd" Comment="" Bounds="3561,14,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3043,17 +3031,16 @@
             </p:NodeReference>
             <Pin Id="VhqHVR4IOJEMZzqRBX4qBP" Name="MediaKey" Kind="InputPin" />
             <Pin Id="N488zQNzxfCPbKVqE9Fynv" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="TvfzEI6RBG9PbB4iybZPna" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="RXE1YACT3q6N3mPIiGfnia" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="F7Z9ywgpI3XOcleaxxRYT1" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="TvfzEI6RBG9PbB4iybZPna" Name="Volume" Kind="InputPin" />
+            <Pin Id="RXE1YACT3q6N3mPIiGfnia" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="F7Z9ywgpI3XOcleaxxRYT1" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="LuEKRzoKJ6DO6e0NiFwI6V" Name="PreventTakeover" Kind="InputPin" />
             <Pin Id="TpHSnQYMzv5QHuJ51Viatu" Name="Retrigger" Kind="InputPin" />
             <Pin Id="PoGcH7Tj1cvLwh8vmqOCp0" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="NcNDyJiusQjOlhKRdrqZXg" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="NAy0O5ylq22P91i2aETwE3" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="NAy0O5ylq22P91i2aETwE3" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="LgTRlvQPqycLkXJuTPC5wP" Name="Send" Kind="InputPin" />
             <Pin Id="QmpCMlaXX0RL0MXkdxjAXH" Name="Result" Kind="OutputPin" />
-            <Pin Id="UTqLPLyLFzwOQW2il8Hf3A" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="HNlPPyw3ge4LXuZJqWPA4c" Comment="LoopCount" Bounds="3442,460,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3065,7 +3052,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="HFK79MvRsDwPTIJ5UvJCZK" Comment="" Bounds="3628,478,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="HFK79MvRsDwPTIJ5UvJCZK" Comment="" Bounds="3651,476,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3107,16 +3094,15 @@
             </p:NodeReference>
             <Pin Id="QSz9gqjf65TLFbBFIkwrKd" Name="MediaKey" Kind="InputPin" />
             <Pin Id="VenpYQEISCGOJk0TBol4Ar" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="Hw6OA9OcyMwLscHalK1kjR" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="QDDK4WnhLi9Ntfgc6cxXvV" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="O3jTNLHg0TRME5w6cBajCM" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="Hw6OA9OcyMwLscHalK1kjR" Name="Volume" Kind="InputPin" />
+            <Pin Id="QDDK4WnhLi9Ntfgc6cxXvV" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="O3jTNLHg0TRME5w6cBajCM" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="OUSxsaxqaggPdsnYwpwvew" Name="Retrigger" Kind="InputPin" />
             <Pin Id="Bz0NRQwXQQZPpX50bjb8nd" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="BApi1biqgpmMOca9BeZiFf" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="FnyEoxyImtEP4N7vsKrnAE" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="FnyEoxyImtEP4N7vsKrnAE" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="D944ZdD2T1LL6qw8RfDiHx" Name="Send" Kind="InputPin" />
             <Pin Id="OqEV8GB9MduPjFBa83fozF" Name="Result" Kind="OutputPin" />
-            <Pin Id="IJoSZpEsT94LCcwAP1jQ7e" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="LZRGP2dL1YsNS2lAerz0eV" Comment="LoopCount" Bounds="3463,552,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3128,7 +3114,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="PRu21oZbR58LGoThz1ao4I" Comment="" Bounds="3649,570,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="PRu21oZbR58LGoThz1ao4I" Comment="" Bounds="3658,568,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3178,7 +3164,7 @@
               <Item>Music_NeverAgain_MainGrooveArpeg</Item>
             </p:Value>
           </Pad>
-          <Pad Id="DiQTF9yVlp0OEgZN7gHCHG" Comment="" Bounds="3931,54,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="DiQTF9yVlp0OEgZN7gHCHG" Comment="" Bounds="3926,101,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3199,16 +3185,15 @@
             </p:NodeReference>
             <Pin Id="KhmzqAhlmDKOUGBTzM5kFw" Name="MediaKey" Kind="InputPin" />
             <Pin Id="MIMcXQtpIYXOUvK6VvC1jb" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="Gg67HwHCmx3OCa6q81mshp" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="CtPb05LZTXfPHsbXpLsbJP" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="EwXIEEDFdqYPwbABGtNFQM" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="Gg67HwHCmx3OCa6q81mshp" Name="Volume" Kind="InputPin" />
+            <Pin Id="CtPb05LZTXfPHsbXpLsbJP" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="EwXIEEDFdqYPwbABGtNFQM" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="IAzqRo9GYQvL00XlXwJ4c6" Name="Retrigger" Kind="InputPin" />
             <Pin Id="MJWwX4lftWjNRfIHHytmNM" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="MPAOQJP60nGQE8ZWCMHPnW" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="Jwypr7UCU5WLaDfEKAJrRN" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="Jwypr7UCU5WLaDfEKAJrRN" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="MRH5Wizqp53OKdtdooNkEP" Name="Send" Kind="InputPin" />
             <Pin Id="PHRSismDbCbOLqFsCO6SqL" Name="Result" Kind="OutputPin" />
-            <Pin Id="LJhNPqYd4sqL0zrwM7hwl8" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="IKeu59fZxwcMKP4DJbZb4v" Comment="LoopCount" Bounds="3746,-86,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3333,16 +3318,15 @@
             </p:NodeReference>
             <Pin Id="I9u5JnlCcPdNlwAjt2G2jg" Name="MediaKey" Kind="InputPin" />
             <Pin Id="F8J757H9OhvPdERT4Icszg" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="PH2pI0Ye7shPD2fj1Cxgal" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="QIaBCfrUK9pPQOBmUysHGD" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="VwvdJ9rvwhqMGjYSjMP9i8" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="PH2pI0Ye7shPD2fj1Cxgal" Name="Volume" Kind="InputPin" />
+            <Pin Id="QIaBCfrUK9pPQOBmUysHGD" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="VwvdJ9rvwhqMGjYSjMP9i8" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="TLNANuTTlv9OdeI1l4J01m" Name="Retrigger" Kind="InputPin" />
             <Pin Id="R7dIHrXRH9cPO15EphpuzR" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="EHUrBsOhxvMM4GJSbh6RLm" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="RRkEaKLGGm8MOpK5TGzhrq" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="RRkEaKLGGm8MOpK5TGzhrq" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="FNSz6GTeX3cLnSU4EmXsQY" Name="Send" Kind="InputPin" />
             <Pin Id="MUSo4CtYTAwLNIYZH6pmid" Name="Result" Kind="OutputPin" />
-            <Pin Id="FGyQV4JxcbJP6nkfrDZ70U" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="G2IHN9goMuQOykm9aWPKlB" Comment="LoopCount" Bounds="3817,420,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3451,7 +3435,7 @@
               <Item>Music_NeverAgain_MainGrooveArpeg</Item>
             </p:Value>
           </Pad>
-          <Pad Id="RqAu3lDbWB6MnsCztDoOza" Comment="" Bounds="4345,-9,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="RqAu3lDbWB6MnsCztDoOza" Comment="" Bounds="4357,38,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3472,16 +3456,15 @@
             </p:NodeReference>
             <Pin Id="UFVUn8klxE3NssyonAJSUI" Name="MediaKey" Kind="InputPin" />
             <Pin Id="PGto3TV4SpbNmJ2DPwxSTY" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="ElAXrXZb2N0NoqdBfLgQO5" Name="Volume" Kind="InputPin" DefaultValue="1.67" />
-            <Pin Id="UF7fZTTc7TQMpP15aqGcQq" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="NjZUcX5L3VELqnZFaoFIfw" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="ElAXrXZb2N0NoqdBfLgQO5" Name="Volume" Kind="InputPin" />
+            <Pin Id="UF7fZTTc7TQMpP15aqGcQq" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="NjZUcX5L3VELqnZFaoFIfw" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="CKYYsWuDmfsNAhGTWstMs3" Name="Retrigger" Kind="InputPin" />
             <Pin Id="AZbNou4WRvPO9jW5rE42M5" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="Il78DavDmzANPnOC06RER0" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="OlgoGIXxIf4PpyGq55dSCP" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="OlgoGIXxIf4PpyGq55dSCP" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="LaTuijncWFPLWICKm9nElc" Name="Send" Kind="InputPin" />
             <Pin Id="B3SOOLqaW5zL4cQXii8SC1" Name="Result" Kind="OutputPin" />
-            <Pin Id="JhYKmnOeJfMLHi8geG05TP" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="DEv9DcHiFtvQcUSDNmyHPm" Comment="LoopCount" Bounds="4205,114,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3550,16 +3533,15 @@
             </p:NodeReference>
             <Pin Id="UDOIkp8HIf6PXQRhzG9MDj" Name="MediaKey" Kind="InputPin" />
             <Pin Id="BuDjfCVosvqP7izNNqWWsn" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="PkbOOrbqpM4L0oOZHNFODC" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="MbuKiq1pRoTNSTAcbU3pZo" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="F2ZjG0As9ybMoTobsspZZu" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="ShPoKBtRQN8ONFmWMLg3rN" Name="Retrigger" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="LwlNHOIeAJCLSAZvriMmv7" Name="TryPlayNext" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="PkbOOrbqpM4L0oOZHNFODC" Name="Volume" Kind="InputPin" />
+            <Pin Id="MbuKiq1pRoTNSTAcbU3pZo" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="F2ZjG0As9ybMoTobsspZZu" Name="VolumeFadeUpTime" Kind="InputPin" />
+            <Pin Id="ShPoKBtRQN8ONFmWMLg3rN" Name="Retrigger" Kind="InputPin" />
+            <Pin Id="LwlNHOIeAJCLSAZvriMmv7" Name="TryPlayNext" Kind="InputPin" />
             <Pin Id="NEFJnhzMkTnN4hdhYfje0P" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="PoofqwSpR2ZLhM0MHCbLcg" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="PoofqwSpR2ZLhM0MHCbLcg" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="MnE5TbbfLznL027AgyIZ3o" Name="Send" Kind="InputPin" />
             <Pin Id="EL6OaeKezc8Nxqra9gFduN" Name="Result" Kind="OutputPin" />
-            <Pin Id="Gk3eWkLwOo0M4HAmbYJ1YX" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="RT9vweVCW1bOA5X8A7pZdy" Comment="LoopCount" Bounds="4580,-66,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3571,7 +3553,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LMHz5MFpwqROFMqiMv0JCD" Comment="" Bounds="4761,-1,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="LMHz5MFpwqROFMqiMv0JCD" Comment="" Bounds="4772,10,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3659,16 +3641,15 @@
             </p:NodeReference>
             <Pin Id="GXkYXoJ8HLRPlSsmQrDl8F" Name="MediaKey" Kind="InputPin" />
             <Pin Id="LravMz5qaGHNiVdiLidF4b" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="Fu7EpgL5ziZL3CzCt8FbDm" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="FJ9iFMQSXj8O82JF5TzeQv" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="LZ7RwC0qpKHNmn6Ab8W8dW" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="Fu7EpgL5ziZL3CzCt8FbDm" Name="Volume" Kind="InputPin" />
+            <Pin Id="FJ9iFMQSXj8O82JF5TzeQv" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="LZ7RwC0qpKHNmn6Ab8W8dW" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="Dy6oAoJTyKVNaTyHGRa47t" Name="Retrigger" Kind="InputPin" />
             <Pin Id="K5VminXgVo5L0Fvm3v1bqs" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="Ac4O9nq4k7uOWtVhixmpvo" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="Lw0YESBqid7NNDVPuYqMDn" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="Lw0YESBqid7NNDVPuYqMDn" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="U5mbTvRJj4FNg3Cm8SfsXs" Name="Send" Kind="InputPin" />
             <Pin Id="KEveKMV8cirPsoDNTK0Vjr" Name="Result" Kind="OutputPin" />
-            <Pin Id="PHDH2HbxCUePKgrkHuXY3c" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="Dgg1NtPTZ3TOVnnZLjdkTx" Comment="LoopCount" Bounds="4641,442,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3680,7 +3661,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="PQ9WgSkQD4rPWhLlYqIEVJ" Comment="" Bounds="4819,467,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="PQ9WgSkQD4rPWhLlYqIEVJ" Comment="" Bounds="4833,467,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3744,16 +3725,15 @@
             </p:NodeReference>
             <Pin Id="CWUvIcG2jIePHW6jNHV7md" Name="MediaKey" Kind="InputPin" />
             <Pin Id="KHYrw5CBlRkNfN8C98ZjGW" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="P6z28V9wf6TNPaS5C9IUnn" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="R8avo8yQJvfPmvrt51imLa" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="Ig4IhJqQ5RIOAd8oqLTbBx" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="P6z28V9wf6TNPaS5C9IUnn" Name="Volume" Kind="InputPin" />
+            <Pin Id="R8avo8yQJvfPmvrt51imLa" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="Ig4IhJqQ5RIOAd8oqLTbBx" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="TX1Ubc8mx8yPkHGBT2cNnH" Name="Retrigger" Kind="InputPin" />
             <Pin Id="D6Eek91XgobLMnD3zm9Atu" Name="TryPlayNext" Kind="InputPin" DefaultValue="True" />
             <Pin Id="RoZWLa1csTJNPxGRCCD4nJ" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="UXdcTw6ZnANOYVKKr6jgWB" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="UXdcTw6ZnANOYVKKr6jgWB" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="K7TmWVZYCneMSdSGxoQXgJ" Name="Send" Kind="InputPin" />
             <Pin Id="AdlchnYTMkYQRmjrvMakeg" Name="Result" Kind="OutputPin" />
-            <Pin Id="PgdC1tRJ4lPP5K1XxuwnSq" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="VCaplPmBpWfPojLBVOHYmB" Comment="LoopCount" Bounds="4672,529,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3765,7 +3745,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BfkL5KTwe4XOpVLIB0zEjU" Comment="" Bounds="4850,554,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BfkL5KTwe4XOpVLIB0zEjU" Comment="" Bounds="4863,555,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3790,16 +3770,15 @@
             </p:NodeReference>
             <Pin Id="PCqQ6LFfEDDLwo25GLKVGQ" Name="MediaKey" Kind="InputPin" />
             <Pin Id="K5Td0RawLv6MlhOtXgXGjH" Name="LoopCount" Kind="InputPin" />
-            <Pin Id="VvQhirTVOHxPsE245LRxx8" Name="Volume" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="NQtoIj2Im5dNusCK9vMcMn" Name="DelayPlayRequestTime" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="OUvMyOZP9rSO3zSUkIeXVa" Name="VolumeFadeUpTime" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="FXlUpbo1iEXQdt5jmQv1bn" Name="Retrigger" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="R53kYCtvRcjPEqytRXUVpP" Name="TryPlayNext" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="VvQhirTVOHxPsE245LRxx8" Name="Volume" Kind="InputPin" />
+            <Pin Id="NQtoIj2Im5dNusCK9vMcMn" Name="DelayPlayRequestTime" Kind="InputPin" />
+            <Pin Id="OUvMyOZP9rSO3zSUkIeXVa" Name="VolumeFadeUpTime" Kind="InputPin" />
+            <Pin Id="FXlUpbo1iEXQdt5jmQv1bn" Name="Retrigger" Kind="InputPin" />
+            <Pin Id="R53kYCtvRcjPEqytRXUVpP" Name="TryPlayNext" Kind="InputPin" />
             <Pin Id="U6XuySh9HPoPwmggzZhE3U" Name="AutoFadeOutOtherMusic" Kind="InputPin" />
-            <Pin Id="VqMKKzX083aNrCnsGKjXtM" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="VqMKKzX083aNrCnsGKjXtM" Name="AutoFadeOutOthersTime" Kind="InputPin" />
             <Pin Id="FLhxI74XyXBMubU7G1PiRp" Name="Send" Kind="InputPin" />
             <Pin Id="IziNccBZJDbLPnzCYwClmz" Name="Result" Kind="OutputPin" />
-            <Pin Id="O9Dr71riK1GPFN2Q4rYLmA" Name="AutoFadeOutOthers" Kind="InputPin" DefaultValue="True" />
           </Node>
           <Pad Id="IH3WwxTWLXoNJ00L3ZPOIi" Comment="LoopCount" Bounds="5203,-64,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -3811,7 +3790,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MDBQ5QKZFZJPD6vTCWA935" Comment="" Bounds="5384,1,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="MDBQ5QKZFZJPD6vTCWA935" Comment="" Bounds="5398,9,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -3885,6 +3864,12 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="D14oyRhfFDGL8jLTpqTf0g" Comment="ValidMediaKeys" Bounds="498,1286,147,99" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="RUiBzDGAeCZNeYZiJzSP4S" Comment="PreloadedMediaKeys" Bounds="717,1282,161,95" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="Nw0ulXeI0KELRU5iyKdHcE" Name="Create" />
         <Patch Id="C0ASWBYMAXzOxVa6Imbe6I" Name="Update" />
@@ -3897,7 +3882,6 @@
         <Link Id="SqjS4zF1xNZL1K78Nx5H69" Ids="Iw9enfsujvnMkNy9PYgxTO,RsNJWpG85MbQGPjgY4LAEe" />
         <Link Id="RtAitFrxGSRLIXsfcUSnfq" Ids="SDNjYdyl4CTPvN6wlh7lfL,PVbrPvYrQ3oMquhY0FS9Ak" />
         <Link Id="KatUUoYlCUPP0ucVEA8bER" Ids="DrhiNUfOBQkMAnoL6nPdXe,R46Hl7RXJvOLm58VaUXdk7" />
-        <Link Id="P0naD3dYs0KPgfzJl2bbxt" Ids="MzALLEMe1ULPejX4NYETQO,IxdaN1VPPKiNRyb9sUUskB" />
         <Link Id="UqJ6RqWJfPTOEQH8Xp9NFN" Ids="PYmMXP5pWPjMfaAA3ZhEcd,NopSL3GtjksO6rbZxSsrt7" />
         <Link Id="Qzbt4aZPFL1NL5kll792mp" Ids="IxBGhALovLtOomGt9iznfX,E3ZkKrATudGNMLNNBUmleX" />
         <Link Id="P7rgYLUeEumMb54UPDeFfR" Ids="KZy1Yu1l6B6OGaeZjPuD2P,MLTkDMRptOmNRE9zWfRFjh" />
@@ -4269,6 +4253,8 @@
         <Link Id="KMKWBtcL5idNPNz2h4097r" Ids="VOJN6jK8DL5Pl83ndJpYO0,PrUm9VuBCcFOr8tzEbKkw0" />
         <Link Id="FGZIlkRlTR7L0tdebUbyCq" Ids="PZPIXCgSrwRMmta0M0dBEQ,CYR1JILaSBgN41h8BaZh0c" />
         <Link Id="SaLfjZd1TwROycgY8iuniC" Ids="GFu2uKmZuTjPIC45xIR1Wj,CLswTJsepl8Nc237izOr1K" />
+        <Link Id="Ce6EkB5bl2KPU4JafXSj98" Ids="UvTVpFoLQsaLXPF9P28qHl,D14oyRhfFDGL8jLTpqTf0g" />
+        <Link Id="BHu7ZKvvPEYPE1zb1BmidG" Ids="LgEsvzFQzNsLSRyI9itZ65,RUiBzDGAeCZNeYZiJzSP4S" />
       </Patch>
     </Node>
   </Patch>

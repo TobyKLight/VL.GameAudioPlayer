@@ -70,7 +70,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CsnbdinA0KYNJJBqKZc3bx" Comment="MediaKey" Bounds="557,69,183,15" ShowValueBox="true" isIOBox="true" Value="Music_Hecticness_Piano">
+          <Pad Id="CsnbdinA0KYNJJBqKZc3bx" Comment="MediaKey" Bounds="557,69,183,15" ShowValueBox="true" isIOBox="true" Value="Music_Hecticness_SnareOutro">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -143,7 +143,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
             <p:Value>
-              <Item>Music_Hecticness_HeavyBeats</Item>
+              <Item>Music_Hecticness_Piano</Item>
               <Item>Music_Hecticness_SnareOutro</Item>
             </p:Value>
           </Pad>
@@ -158,15 +158,6 @@
           <Pad Id="UkWB7rGnByYLeeaqWesxQP" Comment="PreloadInProgress" Bounds="669,678,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="H63WxoHFsldOJA6awkPlJt" Comment="PreloadedMediaKeys" Bounds="762,706,233,49" ShowValueBox="true" isIOBox="true" />
           <Pad Id="KigHnHtmlCwP9bDORAXqpQ" Bounds="689,91,308,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;You can set loop count when you play the track">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="IprsHWRBIVJNbX32b2J2D5" Bounds="821,204,371,195" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

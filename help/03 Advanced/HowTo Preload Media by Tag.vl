@@ -71,7 +71,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PKp1eJVF3N3OynsAvOQMdH" Comment="MediaKeysToPreload" Bounds="992,493,277,65" ShowValueBox="true" isIOBox="true">
+          <Pad Id="PKp1eJVF3N3OynsAvOQMdH" Comment="MediaKeysToPreload" Bounds="1008,496,277,28" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -81,8 +81,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
             <p:Value>
-              <Item>Music_Hecticness_HeavyBeatsMelody</Item>
-              <Item>Music_Hecticness_Piano</Item>
+              <Item>Music_AmbientSlowRain</Item>
               <Item>Music_AmbientSlowRain</Item>
             </p:Value>
           </Pad>
@@ -260,6 +259,11 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Dps0OA9hcCPQSontwoTupt" Comment="ValidMediaKeys" Bounds="486,642,132,102" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
         </Canvas>
         <Patch Id="O4DeXx568MVLdm8ROojG2l" Name="Create" />
         <Patch Id="NSCLSGlL5EtPq5aFiZecsg" Name="Update" />
@@ -286,6 +290,7 @@
         <Link Id="IpIv0M04giPOEHlldbQGhk" Ids="K5S2IY9dx8TQYoAtyyjfxy,IVTazFNUmy8P04IBIxdJ18" />
         <Link Id="Vb19StlfHeqQL6XRHUubiI" Ids="KBxHqHhSNezQaj5CCx2Zq5,MkTkaMqTsv1O4yd0nAonBA" />
         <Link Id="MKzkl1IDSpIQcLlNcx0C9S" Ids="NYR7b9mSK0cPwu9991kxf4,DrsqrAO5kP9QB6ZdE3kyGL" />
+        <Link Id="KnCeMhB3oaoPOqcPe4g2Q3" Ids="VnbNlLb1kiTMIEgNuXxRkA,Dps0OA9hcCPQSontwoTupt" />
       </Patch>
     </Node>
   </Patch>

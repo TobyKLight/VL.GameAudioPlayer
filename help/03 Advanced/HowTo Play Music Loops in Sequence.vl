@@ -465,7 +465,7 @@
             <Pin Id="ELi7if6AGivPHoVV6gPRkD" Name="VolumeFadeUpTime" Kind="InputPin" />
             <Pin Id="LEJxPsF79p0MgD4am96fqF" Name="PlayNextForceFullQueue" Kind="InputPin" />
             <Pin Id="J3ssbNgdl3xPCKNHqEMlJ2" Name="AutoFadeOutOthers" Kind="InputPin" />
-            <Pin Id="MF3wxc9mXW5OPRsTL8Dsy4" Name="AutoFadeOutOthersTime" Kind="InputPin" />
+            <Pin Id="MF3wxc9mXW5OPRsTL8Dsy4" Name="AutoFadeOutOthersTime" Kind="InputPin" DefaultValue="1" />
             <Pin Id="JwySwKGEgHbN4Lru0HI8Hx" Name="AutoFadeOutOthersDelay" Kind="InputPin" />
             <Pin Id="RpQTdYwtRr6Ob3pJZy7sYU" Name="Send" Kind="InputPin" DefaultValue="False" />
             <Pin Id="FiHl8TWbgIzOCLP4cRFRWz" Name="Result" Kind="OutputPin" />
@@ -490,7 +490,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Tff4bbwaG8RNjxJykW1g3q" Comment="" Bounds="1558,1997,88,49" ShowValueBox="true" isIOBox="true" Value="0" />
-          <Pad Id="PWfNGzif2XXOEPy05tgzwv" Bounds="1517,1962,132,19" ShowValueBox="true" isIOBox="true" Value="//CanExitEveryXBars">
+          <Pad Id="PWfNGzif2XXOEPy05tgzwv" Bounds="1517,1962,172,6" ShowValueBox="true" isIOBox="true" Value="//CanExitEveryXBars">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -801,6 +801,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="HOsuABvO51nNpxjlYz8hzb" Bounds="1014,452,108,19" ShowValueBox="true" isIOBox="true" Value="press and wait...">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Az8nei9G7ACNEBcmWrG47B" Bounds="1320,2060,292,55" ShowValueBox="true" isIOBox="true" Value="In this case totalposition and totalduration is total in the context of a single item of media inc loopcount, not total as in the whole queue. ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

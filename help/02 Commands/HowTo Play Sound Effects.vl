@@ -36,9 +36,8 @@
             <Pin Id="FejfSsupxrJN189serHKMI" Name="MediaKeysToPreload" Kind="InputPin" />
             <Pin Id="MgRQNuOEChDMiFuhVofpkz" Name="Debug_PlayerInstancesByMediaType" Kind="OutputPin" />
             <Pin Id="Rcu7wS4skaMO7SD28kzgJG" Name="ValidMediaKeys" Kind="OutputPin" />
-            <Pin Id="GVhfHIgcZWpNxSrdc5kxNo" Name="Debug_ValidMediaKeysFromMediaConfigTSV" Kind="OutputPin" />
-            <Pin Id="F2iyszZqVlcNPFxMnWfTAf" Name="Debug_ValidMediaKeysFromFileNames" Kind="OutputPin" />
             <Pin Id="MrwBSuYhjIaO21le2ePtJU" Name="PreloadInProgress" Kind="OutputPin" />
+            <Pin Id="ACSIIXKrhWAOnwTPtEMNFu" Name="PreloadedMediaKeys" Kind="OutputPin" />
           </Node>
           <Pad Id="UJ4vqq4R64YLw7aBnEbuAT" Comment="Send" Bounds="1133,379,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
@@ -372,6 +371,7 @@
               <Choice Kind="ProcessAppFlag" Name="MediaStatus" />
             </p:NodeReference>
             <Pin Id="KRuj35ZwvFqO0PFj63h4uw" Name="MediaKey" Kind="InputPin" />
+            <Pin Id="FvWK0X76PxnQZlaFBgadGo" Name="FollowPlayerWithSamePath" Kind="InputPin" />
             <Pin Id="R5xb4soo7EdNXL2xBGreX5" Name="Send" Kind="InputPin" />
             <Pin Id="MbI7j5h1TanONCmRXhROqv" Name="Result" Kind="OutputPin" />
             <Pin Id="DhyRxrykSv5QZH9jcBV1Bf" Name="FoundPlayingMedia" Kind="OutputPin" />
@@ -383,6 +383,7 @@
           </Node>
           <ControlPoint Id="S2w9AaT1a17QIMGvxXO0wH" Bounds="723,527" />
           <Pad Id="MYI0brhVqDlO2yFOgTLiHr" Comment="SampleRate" Bounds="1220,604,74,12" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KeE8ZtET12eMvuvLx5Gl5j" Comment="PreloadedMediaKeys" Bounds="949,847,117,65" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="O4DeXx568MVLdm8ROojG2l" Name="Create" />
         <Patch Id="NSCLSGlL5EtPq5aFiZecsg" Name="Update" />
@@ -423,6 +424,7 @@
         <Link Id="EuEac6MWORfQQB7RnMwOTy" Ids="HzJip0LHsimPwtB9vVaB49,FejfSsupxrJN189serHKMI" />
         <Link Id="MWIMZ3bFTEjLkXy6ufq3Gk" Ids="CsnbdinA0KYNJJBqKZc3bx,KRuj35ZwvFqO0PFj63h4uw" />
         <Link Id="IZCziYY0blLMxlWoc3XwDk" Ids="ULAZtZMem2qMZe2uYI8iBO,R5xb4soo7EdNXL2xBGreX5" />
+        <Link Id="RIQweiwW3suM9VJv0hLpvr" Ids="ACSIIXKrhWAOnwTPtEMNFu,KeE8ZtET12eMvuvLx5Gl5j" />
       </Patch>
     </Node>
   </Patch>

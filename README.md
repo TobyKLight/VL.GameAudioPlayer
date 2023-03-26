@@ -7,6 +7,7 @@ In Gamma go to top left menu>Manage Nugets>Command line and type
 ```nuget install VL.GameAudioPlayer```
 
 [Video tutorial](https://youtu.be/YpNjaCLbQZM)
+
 NOTE - The advanced architecture has been simplified since the video. Check the Advanced Architecture helppatch. 
 
 ## Features 

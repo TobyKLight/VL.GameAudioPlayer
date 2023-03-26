@@ -7,7 +7,7 @@ In Gamma go to top left menu>Manage Nugets>Command line and type
 ```nuget install VL.GameAudioPlayer```
 
 [Video tutorial](https://youtu.be/YpNjaCLbQZM)
-
+NOTE - The advanced architecture has been simplified since the video. Check the Advanced Architecture helppatch. 
 
 ## Features 
 * Aims to reduce the complexity of getting audio playback into your app while maintaining good performance.
@@ -45,6 +45,7 @@ In Gamma go to top left menu>Manage Nugets>Command line and type
 * Positioning functionality is just left to right panning. In theory the underlying library supports 3D positioning. Again I didn't have a usecase during development so if you've got one and you would like to contribute please get in touch. 
 
 ## Changelog 
+* 1.0.4 Simplified the advanced workflow with ChannelCommand stateless operations. Find them under Advanced in node browser.
 * 1.0.3 improved helppatches, improved dispose, fixed incorrect duration calculation for queued items 
 * 1.0.2 improved helppatches 
 * 1.0.1 improved helppatches, added function for MediaStatus command to continuing following the same player while next media has the same path. 

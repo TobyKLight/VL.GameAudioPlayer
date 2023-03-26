@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="E0VoS1MnrdzOuRayNWhd7i" LanguageVersion="2021.4.12.1374" Version="0.128">
-  <NugetDependency Id="I1YjwIJ5hGOL5hGzmSpzbU" Location="VL.CoreLib" Version="2021.4.12" />
+<Document xmlns:p="property" Id="E0VoS1MnrdzOuRayNWhd7i" LanguageVersion="2022.5.0-0577-gbbf5a07a29" Version="0.128">
+  <NugetDependency Id="I1YjwIJ5hGOL5hGzmSpzbU" Location="VL.CoreLib" Version="2022.5.0-0577-gbbf5a07a29" />
   <Patch Id="KWwyvAVo3KpNSKbGZrlZ8y">
     <Canvas Id="QSZUk3kz9KaPUpoWHZQ15g" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -16,7 +16,7 @@
       <Patch Id="IOFQE3WqXsaNmgBnYBakC9">
         <Canvas Id="RsbUYazjIqrOzucfYc8Dv4" CanvasType="Group">
           <Node Bounds="548,657,265,19" Id="MtY0KWiVteXQbxIdj6qBPR">
-            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastSymbolSource="VL.GameAudioPlayer.vl">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastDependency="VL.GameAudioPlayer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GameAudioHost" />
             </p:NodeReference>
@@ -34,7 +34,7 @@
             <Pin Id="KSBd6mMP944Ns1SpNaV9Y8" Name="ValidMediaKeys" Kind="OutputPin" />
           </Node>
           <Pad Id="Ing0KblIrnAO1IyDMujXBL" Comment="AudioFilesFolder" Bounds="759,557,228,15" ShowValueBox="true" isIOBox="true" Value="..\..\Data_TestAudio\">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Path" />
               <CategoryReference Kind="Category" Name="IO" />
             </p:TypeAnnotation>
@@ -43,7 +43,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="NmjrlxnPT7hOtVoPHbFljS" Comment="DoRescanFiles" Bounds="784,581,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -52,7 +52,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="ULAZtZMem2qMZe2uYI8iBO" Comment="Send" Bounds="917,260,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -61,17 +61,17 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="CsnbdinA0KYNJJBqKZc3bx" Comment="MediaKey" Bounds="778,214,181,15" ShowValueBox="true" isIOBox="true" Value="Music_Hecticness">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="VMCOMO4MZObLpMnH8kYd8f" Comment="Volume" Bounds="805,243,35,15" ShowValueBox="true" isIOBox="true" Value="1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="776,300,145,19" Id="BbCgsQ9JOOlO3VAbRSFkxj">
-            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Commands" LastSymbolSource="VL.SFML.GameAudioPlayerR.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastDependency="VL.GameAudioPlayer.vl" OverloadStrategy="AllPinsThatAreNotCommon">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PlayMusic" />
               <PinReference Kind="InputPin" Name="Node Context" />
@@ -84,8 +84,8 @@
             <Pin Id="BCckdgPCprdLG1YFITdqpF" Name="Send" Kind="InputPin" />
             <Pin Id="PjXcACuwYb6NKq9F8f5tTE" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="EB3zRKHQGLcQbHx3MAkt0v" Bounds="7,18,466,628" ShowValueBox="true" isIOBox="true" Value="To get started with VL.GameAudioPlayer you need:&#xD;&#xA;&#xD;&#xA;1. The process GameAudioHost. This receives commands and manages player instances. You should only need one in your whole app.&#xD;&#xA;&#xD;&#xA;2. A folder with some audio files. &#xD;&#xA;You can use almost any audio format except MP3. &#xD;&#xA;See the helppatch 'Adding Media'  for more details&#xD;&#xA;There is a folder with test files included with VLGameAudioPlayer called Data_TestAudio. &#xD;&#xA;If you change the folder press 'DoRescanFiles' &#xD;&#xA;&#xD;&#xA;3.If the folder is properly set up you will see a list of valid MediaKeys &#xD;&#xA;&#xD;&#xA;4. Send some play commands with the MediaKeys.&#xD;&#xA;You can find more commands in the node browser under GameAudioPlayer/Command/...&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Notes &#xD;&#xA;-Use Merge (PinGroup) for a reactive Merge node you can add extra inputs to with Ctrl-+ &#xD;&#xA;-If you need to get commands out of a loop context use Merge (Spectral) to turn a Spread&lt;Observable&lt;X&gt;&gt; into &lt;Observable&lt;X&gt;&gt; &#xD;&#xA;-When connecting multiple commands to a Merge node you may need to force connect with space-click so that it takes the shared type iGameAudioRequest &#xD;&#xA;-The commands should be placed in a stateful context, as they create an observable object and hold that reference for the next time you send the command. If they are used a context where they are recreated every frame this could create a performance issue in a complex app. IF you prefer to use the commands in a stateless way see the Advanced Architecture helppatch&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
-            <p:TypeAnnotation>
+          <Pad Id="EB3zRKHQGLcQbHx3MAkt0v" Bounds="7,18,466,628" ShowValueBox="true" isIOBox="true" Value="To get started with VL.GameAudioPlayer you need:&#xD;&#xA;&#xD;&#xA;1. The process GameAudioHost. This receives commands and manages player instances. You should only need one in your whole app.&#xD;&#xA;&#xD;&#xA;2. A folder with some audio files. &#xD;&#xA;You can use almost any audio format except MP3. &#xD;&#xA;See the helppatch 'Adding Media'  for more details&#xD;&#xA;There is a folder with test files included with VLGameAudioPlayer called Data_TestAudio. &#xD;&#xA;If you change the folder press 'DoRescanFiles' &#xD;&#xA;&#xD;&#xA;3.If the folder is properly set up you will see a list of valid MediaKeys &#xD;&#xA;&#xD;&#xA;4. Send some play commands with the MediaKeys.&#xD;&#xA;You can find more commands in the node browser under GameAudioPlayer/Command/...&#xD;&#xA;(BUT Note these are not the nodes under the Advanced category 'ChannelComand'  for those see the helppatch 'Advanced Architecture') &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Notes &#xD;&#xA;-Use Merge (PinGroup) for a reactive Merge node you can add extra inputs to with Ctrl-+ &#xD;&#xA;-If you need to get commands out of a loop context use Merge (Spectral) to turn a Spread&lt;Observable&lt;X&gt;&gt; into &lt;Observable&lt;X&gt;&gt; &#xD;&#xA;-When connecting multiple commands to a Merge node you may need to force connect with space-click so that it takes the shared type iGameAudioRequest &#xD;&#xA;-The commands should be placed in a stateful context, as they create an observable object and hold that reference for the next time you send the command. If they are used a context where they are recreated every frame this could create a performance issue in a complex app. IF you prefer to use the commands in a stateless way see the Advanced Architecture helppatch&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -94,7 +94,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="582,412,105,19" Id="RbJbShuvzqNLOeGuCy4xNt">
-            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastSymbolSource="VL.SFML.GameAudioPlayer.vl">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer" LastDependency="VL.GameAudioPlayer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Merge (PinGroup)" />
             </p:NodeReference>
@@ -109,7 +109,7 @@
             </p:Value>
           </Pad>
           <Node Bounds="581,301,65,19" Id="HJiapqOkSmNLnl0MN9KP1V">
-            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastSymbolSource="VL.GameAudioPlayer.vl">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastDependency="VL.GameAudioPlayer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PlaySFX" />
             </p:NodeReference>
@@ -120,12 +120,12 @@
             <Pin Id="QoAodM5axlPL56ncOaDtOx" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="GcGYSA91uD0O8ySigkzwEr" Comment="MediaKey" Bounds="582,215,105,16" ShowValueBox="true" isIOBox="true" Value="Pellet1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Q2lFOuDFwRdMtAETwKeeCX" Comment="Send" Bounds="644,259,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -134,7 +134,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="IzpbV3kunIHMSamqbGx53i" Comment="Send" Bounds="1018,257,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -143,7 +143,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1016,308,75,19" Id="LeLOO2NFwM7Ps7cgDdexrr">
-            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastSymbolSource="VL.SFML.GameAudioPlayer.vl">
+            <p:NodeReference LastCategoryFullName="GameAudioPlayer.Command" LastDependency="VL.GameAudioPlayer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StopAllMedia" />
             </p:NodeReference>
@@ -151,7 +151,7 @@
             <Pin Id="A2fTBmVsnf7NCHVOtVFQqu" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="Dz9ClMoRjpVOezQgE0Mw8A" Bounds="496,643,35,37" ShowValueBox="true" isIOBox="true" Value="1.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -160,7 +160,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="EyJz058Z2xzNNv4IhU89eb" Bounds="710,543,35,37" ShowValueBox="true" isIOBox="true" Value="2.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -169,7 +169,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="FwzZGs2cwreQC85IuQ1VCy" Bounds="494,733,35,37" ShowValueBox="true" isIOBox="true" Value="3.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -178,7 +178,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="DOc3ySdpFMELg1qXMUYacu" Bounds="522,301,35,37" ShowValueBox="true" isIOBox="true" Value="4.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
